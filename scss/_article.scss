@@ -1,0 +1,16 @@
+@use 'colors';
+@use 'basics';
+
+//.intro {
+//   padding: 2rem 1.6rem;
+//   &__content {
+//   }
+// }
+.post {
+  &__image {
+    width: 250px;
+    @media screen and (min-width: 480px) {
+      width: 350px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@use 'colors';
+
+$font-body: 'Open Sans', sans-serif;
+$font-header: 'Nunito', sans-serif;
+$border-radius-primary: 0.625rem;
+
+$font-size-mobile: 0.9rem;
+
+html {
+  box-sizing: border-box;
+  font-family: $font-body;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.year {
+  text-align: center;
+}
+.back-to-top .fa {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: colors.$color-white;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.5;
+  position: absolute;
+  right: 1rem;
+  bottom: 6.5rem;
+  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: 480px) {
+    bottom: 4rem;
+  }
+  @media screen and (min-width: 780px) {
+    bottom: 2.5rem;
+  }
+}
+
+//------------ANIMATIONS------------
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+//------blog.html----
+//------portfolio.html----
+.intro {
+  &__content {
+    margin: 2rem 1.6rem;
+    border: 2px solid black;
+    background-color: white;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  &__image {
+    width: 250px;
+    @media screen and (min-width: 480px) {
+      width: 350px;
+    }
+  }
+}

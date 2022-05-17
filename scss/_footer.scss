@@ -1,0 +1,19 @@
+@use 'colors';
+@use 'basics';
+
+.footer {
+  &__content {
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: colors.$color-primary-1;
+  }
+  &__content:last-child {
+    padding-bottom: 2.7rem;
+    @media screen and (min-width: 480px) {
+      padding-bottom: 1.3rem;
+    }
+  }
+  &__text {
+    margin: 0;
+  }
+}

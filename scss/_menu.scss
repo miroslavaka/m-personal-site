@@ -1,0 +1,39 @@
+@use 'colors';
+@use 'basics';
+
+.menu {
+  &__list {
+    display: flex;
+    list-style: none;
+    /*mobile:*/
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: colors.$color-portfolio-bg;
+    box-shadow: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
+      0px 2px 16px 0px rgba(14, 30, 37, 0.32);
+
+    @media screen and (min-width: 480px) {
+      //tuto ma byt ina background-color, kukni
+      background-color: transparent;
+      position: relative;
+      box-shadow: none;
+    }
+  }
+
+  &__item:not(:last-child) {
+    border-right: 0.06rem solid colors.$color-menu-items;
+  }
+  &__link {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: colors.$color-menu-items;
+    @media screen and (min-width: 480px) {
+      color: colors.$color-white;
+    }
+  }
+}

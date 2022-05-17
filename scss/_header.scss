@@ -1,0 +1,117 @@
+@use 'colors';
+@use 'basics';
+
+.header {
+  background-image: linear-gradient(
+    90deg,
+    colors.$color-primary-2,
+    colors.$color-primary-1,
+    colors.$color-primary-3
+  );
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
+  &__content {
+    padding: 0 1.6rem;
+    @media screen and (min-width: 480px) {
+      padding: 0 2.4rem;
+    }
+    @media screen and (min-width: 580px) {
+      padding: 0 2.8em;
+    }
+    @media screen and (min-width: 680px) {
+      padding: 0 3.2em;
+    }
+    @media screen and (min-width: 780px) {
+      // padding: 0 3.6rem;
+    }
+    @media screen and (min-width: 1080px) {
+      padding: 0 3.9rem;
+    }
+    @media screen and (min-width: 1150px) {
+      padding: 0 5rem;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0 7rem;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 0 10rem;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1.5rem;
+  }
+  &__logo {
+    font-size: 2rem;
+    color: colors.$color-white;
+  }
+  &__hero {
+    padding: 2rem 0;
+    font-size: basics.$font-size-mobile;
+    @media screen and (min-width: 780px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      padding: 4rem 0;
+    }
+    @media screen and (min-width: 980px) {
+      gap: 2.5rem;
+    }
+    @media screen and (min-width: 1080px) {
+      gap: 3.5rem;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 4.5rem;
+    }
+  }
+  &__image {
+    position: relative;
+    .hero__image {
+      width: 100%;
+      border-radius: basics.$border-radius-primary;
+      box-shadow: 5px 5px 15px 5px rgba(255, 135, 249, 0.2),
+        -9px 5px 15px 5px rgb(255, 219, 57, 0.3),
+        -7px -5px 15px 5px rgba(118, 248, 255, 0.3),
+        3px 2px 4px 1px rgba(255, 255, 255, 0.6);
+    }
+  }
+  &__cursor {
+    display: inline;
+    color: colors.$color-white;
+    position: absolute;
+    top: 9rem;
+    left: 11rem;
+
+    &--animated {
+      animation: blink 1.5s ease-in-out infinite;
+    }
+  }
+  &__text {
+    &--btn a {
+      text-decoration: none;
+      padding: 0.25rem 0.6rem;
+      background: linear-gradient(
+        170deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.6) 20%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
+        0px 0px 10px rgba(0, 0, 0, 0.15);
+      background-size: 150%;
+      background-position: right;
+      transition: 1s;
+    }
+    &--btn a:hover {
+      background-position: left;
+      color: white;
+      box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

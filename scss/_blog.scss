@@ -1,0 +1,74 @@
+@use 'colors';
+@use 'basics';
+
+.main-blog {
+  background-color: colors.$color-white;
+}
+.blog {
+  &__content {
+    padding: 2rem 1.6rem;
+
+    h2 {
+      margin: 0 0 1rem 0;
+    }
+  }
+  &__articles {
+    @media screen and (min-width: 480px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media screen and (min-width: 780px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__articles:last-child {
+    @media screen and (min-width: 480px) {
+      align-items: center;
+      justify-items: center;
+    }
+    @media screen and (min-width: 780px) {
+      align-items: stretch;
+    }
+  }
+  &__article {
+    font-size: basics.$font-size-mobile;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0.6rem 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid colors.$color-portfolio-bg;
+    border-radius: basics.$border-radius-primary;
+    padding: 0 0.8rem 0.8rem 0.8rem;
+  }
+  &__more {
+    font-size: basics.$font-size-mobile;
+    text-decoration: none;
+  }
+  &__btn {
+    @media screen and (min-width: 780px) {
+      grid-column: 3/4;
+    }
+  }
+  &__btn a {
+    text-decoration: none;
+    padding: 0.25rem 0.6rem;
+    background: linear-gradient(
+      170deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.6) 20%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
+      0px 0px 10px rgba(0, 0, 0, 0.15);
+    background-size: 150%;
+    background-position: right;
+    transition: 1s;
+  }
+  &__btn a:hover {
+    background-position: left;
+    color: colors.$color-primary-1;
+    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
+      0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+}
