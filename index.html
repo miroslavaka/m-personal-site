@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/4eb1136a11.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Mira´s Portfolio</title>
   </head>
   <body>
@@ -23,23 +24,27 @@
       <header class="header">
         <div class="header__content">
           <div class="header__inner">
-            <div class="header__logo">Mira</div>
+            <div class="header__logo">
+              <a href="#">Mira</a>
+            </div>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
                   <a class="menu__link" href="#">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="about.html">About</a>
+                  <a class="menu__link" href="/_site/about/index.html">About</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="portfolio.html">Portfolio</a>
+                  <a class="menu__link" href="/_site/portfolio/index.html"
+                    >Portfolio</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="blog.html">Blog</a>
+                  <a class="menu__link" href="/_site/blog/index.html">Blog</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="hobby.html">Hobby</a>
+                  <a class="menu__link" href="/_site/hobby/index.html">Hobby</a>
                 </li>
               </ul>
             </nav>
@@ -48,7 +53,7 @@
             <div class="header__image">
               <img
                 class="hero__image"
-                src="/images/workspace2.png"
+                src="/images/workspace.png"
                 alt="Workspace"
               />
               <div class="header__cursor">
@@ -56,17 +61,20 @@
               </div>
             </div>
             <div class="header__text">
-              <h2>👋 Hi,</h2>
+              <h2>Hi,</h2>
               <h3>I´m Mira</h3>
-              <p>
-                Aspiring web designer and developer based in Bratislava,
-                Slovakia.
+              <p class="header__about">
+                Aspiring web/front-end developer and designer based in
+                Bratislava, Slovakia.
               </p>
               <p>
-                I want to create web and interactive things with code. I am
-                learning how to do it great.
+                I create interactive things with code. I am learning how to do
+                it great.
               </p>
-              <div class="header__text--btn">
+              <!-- <div class="header__text--btn">
+                <a href="">more about me...</a>
+              </div> -->
+              <div class="button button--primary">
                 <a href="">more about me...</a>
               </div>
             </div>
@@ -80,15 +88,15 @@
         <section class="portfolio">
           <div class="portfolio__content">
             <h2>My projects</h2>
-            <h5>including this web</h5>
+            <h5>- including this web -</h5>
             <div class="portfolio__projects">
               <div class="portfolio__project">
+                <h4 class="portfolio__title">To do list</h4>
                 <img
                   class="portfolio__image"
                   src="/images/projects/to-do-list.jpg"
                   alt="To do list"
                 />
-                <h5 class="portfolio__title">To do list</h5>
                 <p class="portfolio__description">
                   Simple to do list to write activities and remove once any
                   activity is finished
@@ -113,12 +121,12 @@
                 </div>
               </div>
               <div class="portfolio__project">
+                <h4 class="portfolio__title">Protect your vision</h4>
                 <img
                   class="portfolio__image"
                   src="/images/projects/protect-your-vision.jpg"
                   alt="Protect your vision"
                 />
-                <h5 class="portfolio__title">Protect your vision</h5>
                 <p class="portfolio__description">
                   Simple application where user selects time and after that time
                   application runs music to remind the user to take the break
@@ -144,12 +152,12 @@
                 </div>
               </div>
               <div class="portfolio__project">
+                <h4 class="portfolio__title">Art quiz</h4>
                 <img
                   class="portfolio__image"
                   src="/images/projects/kviz-react.jpg"
                   alt="Protect your vision"
                 />
-                <h5 class="portfolio__title">Art quiz</h5>
                 <p class="portfolio__description">
                   Simple quiz tests user knowledge from art topics. Quiz
                   contains 3 options to select from and at the end tells the
@@ -175,8 +183,7 @@
                   >
                 </div>
               </div>
-
-              <div class="portfolio__btn">
+              <div class="button button--primary">
                 <a href="">all my projects...</a>
               </div>
             </div>
@@ -218,7 +225,7 @@
                 </p>
                 <a class="blog__more" href="">Read more</a>
               </div>
-              <div class="blog__btn">
+              <div class="button button--primary">
                 <a href="">to my blog...</a>
               </div>
             </div>
@@ -227,15 +234,18 @@
 
         <!--SECTION CONTACT-->
         <section class="contact">
-          <!-- <div class="contact"> -->
+          <h2>Contact</h2>
           <div class="contact__content">
-            <div>
-              <h2>Contact</h2>
-              <p>I´m always looking for fun to work.</p>
-              <p>
-                If you think I´d be a good match, send me an email:
-                <a href="mailto:kacmarova.miroslava@gmail.com"> email</a>
-              </p>
+            <div class="contact__left">
+              <div class="contact__text">
+                <p>I´m always looking for fun to work.</p>
+                <p>
+                  If you think I´d be a good match <br />
+                  <a href="mailto:kacmarova.miroslava@gmail.com">
+                    contact me via email</a
+                  >
+                </p>
+              </div>
               <div class="contact__social">
                 <a href="https://github.com/miroslavaka" target="_blank"
                   ><i class="fa fa-github"></i
@@ -247,6 +257,9 @@
                   ><i class="fa fa-twitter"></i
                 ></a>
               </div>
+              <div class="contact__greeting">
+                <p>Hey there</p>
+              </div>
             </div>
             <img
               class="contact__image"
@@ -254,7 +267,6 @@
               alt="Girl working on pc with coffee in hand"
             />
           </div>
-          <!-- </div> -->
         </section>
         <div class="back-to-top">
           <a href="#"> <i class="fa fa-angle-up"></i></a>
@@ -264,7 +276,7 @@
       <footer>
         <div class="footer__content">
           <p class="footer__text">
-            Final project for course Koderka, www.czechitas.cz ✨
+            Final project for course Koderka, www.czechitas.cz
           </p>
           <p class="footer__text">
             Illustrations used on web by
@@ -279,6 +291,7 @@
         </div>
       </footer>
     </div>
-    <script src="/scr/script.js"></script>
+    <script src="/src/script.js"></script>
+    <script src="/src/fslightbox.min.js"></script>
   </body>
 </html>

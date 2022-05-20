@@ -10,9 +10,17 @@
     padding: 2rem 1.6rem;
     h2 {
       margin-top: 0;
+      font-size: 1.7rem;
+      color: colors.$color-primary-1;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012),
+        0 2px 2px rgba(0, 0, 0, 0.012);
     }
-    @media screen and (min-width: 480px) {
-      //padding: 0 2.4rem;
+    @media screen and (min-width: 780px) {
+      padding: 2rem 2.6rem;
+    }
+    @media screen and (min-width: 980px) {
+      padding: 2rem 3.6rem;
     }
   }
   &__projects {
@@ -23,6 +31,9 @@
     }
     @media screen and (min-width: 780px) {
       grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width: 980px) {
+      gap: 2rem;
     }
   }
   //toto zafungovalo na vsetky child, nie iba na posledne:
@@ -38,18 +49,18 @@
   &__project {
     margin: 1rem 0;
     border-bottom: 1px solid colors.$color-menu-items;
-    h5 {
+    h4 {
       text-align: center;
-      margin: 0;
-    }
-    img {
-      opacity: 0.7;
+      margin: 0.4rem 0;
     }
   }
 
   &__image {
     width: 100%;
     border-radius: basics.$border-radius-primary;
+    opacity: 0.75;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+      0 3px 3px rgba(0, 0, 0, 0.12);
   }
   &__description {
     font-size: basics.$font-size-mobile;
@@ -63,39 +74,23 @@
       width: 2rem;
     }
   }
+
   &__btn {
     @media screen and (min-width: 780px) {
       grid-column: 3/4;
     }
   }
-  &__btn a {
-    text-decoration: none;
-    padding: 0.25rem 0.6rem;
-    background: linear-gradient(
-      170deg,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(255, 255, 255, 0.6) 20%,
-      rgba(255, 255, 255, 0.1) 50%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
-      0px 0px 10px rgba(0, 0, 0, 0.15);
-    background-size: 150%;
-    background-position: right;
-    transition: 1s;
-  }
-  &__btn a:hover {
-    background-position: left;
-    color: colors.$color-primary-1;
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
-      0px 0px 10px rgba(0, 0, 0, 0.25);
-  }
+
   &__links {
     text-align: center;
+    margin-bottom: 0.5rem;
     a {
       font-size: basics.$font-size-mobile;
       text-decoration: none;
+      color: #313140;
+      display: inline-block;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
+      padding: 0.2rem 0.5rem;
     }
   }
 }

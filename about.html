@@ -23,7 +23,9 @@
       <header class="header">
         <div class="header__content">
           <div class="header__inner">
-            <div class="header__logo">Mira</div>
+            <div class="header__logo">
+              <a href="#">Mira</a>
+            </div>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -67,12 +69,11 @@
               <h1>Where can I help</h1>
               <ul>
                 <li>
-                  if you don´t mind that I do not have years of experiences and
-                  I did not created many cool projects
+                  if you don´t mind that I do not have years of experiences
                 </li>
-                <li>if you don´t mind that I sill learn and study</li>
-                <li>if you do not need web in one week, it takes time</li>
-                <li>vif you don´t want to settle for generic templates</li>
+                <li>if you don´t need web in one week, it takes time</li>
+                <li>if you don´t want to settle for generic templates</li>
+                <li>if you prefere custom designs</li>
               </ul>
             </div>
           </div>
@@ -87,7 +88,7 @@
                   src="/images/icons/html.png"
                   alt="Html icon"
                 />
-                <p>Html</p>
+                <p class="tools__text">Html</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -95,7 +96,7 @@
                   src="/images/icons/css.png"
                   alt="Css icon"
                 />
-                <p>Css</p>
+                <p class="tools__text">Css</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -103,7 +104,7 @@
                   src="/images/icons/javascript.png"
                   alt="Javascript icon"
                 />
-                <p>JavaScript</p>
+                <p class="tools__text">JavaScript</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -111,7 +112,7 @@
                   src="/images/icons/sass.png"
                   alt="Sass icon"
                 />
-                <p>Sass</p>
+                <p class="tools__text">Sass</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -119,7 +120,7 @@
                   src="/images/icons/github.png"
                   alt="Github icon"
                 />
-                <p>GitHub</p>
+                <p class="tools__text">GitHub</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -127,7 +128,7 @@
                   src="/images/icons/vscode.png"
                   alt="VScode icon"
                 />
-                <p>VScode</p>
+                <p class="tools__text">VScode</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -135,7 +136,7 @@
                   src="/images/icons/photoshop.png"
                   alt="Photoshop icon"
                 />
-                <p>Photoshop</p>
+                <p class="tools__text">Photoshop</p>
               </div>
             </div>
             <div class="tools__learn">
@@ -146,7 +147,7 @@
                   src="/images/icons/terminal.png"
                   alt="Command line icon"
                 />
-                <p>CommandLine</p>
+                <p class="tools__text">CommandLine</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -154,7 +155,7 @@
                   src="/images/icons/react.png"
                   alt="React icon"
                 />
-                <p>React</p>
+                <p class="tools__text">React</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -162,7 +163,7 @@
                   src="/images/icons/responsive.png"
                   alt="Responsive icon"
                 />
-                <p>Responsivity</p>
+                <p class="tools__text">Responsivity</p>
               </div>
               <div class="custom--btn">
                 <img
@@ -170,13 +171,13 @@
                   src="/images/icons/sql.png"
                   alt="Sql icon"
                 />
-                <p>Sql</p>
+                <p class="tools__text">Sql</p>
               </div>
             </div>
           </div>
         </section>
         <section class="contact">
-          <div class="contact__content">
+          <div class="contact__form">
             <form
               class="form"
               action="https://submit-form.com/ikGQvsrB"
@@ -201,7 +202,7 @@
                   type="text"
                 />
               </div>
-              <div class="form__field--email">
+              <div class="form__field form__field--email">
                 <label class="form__label" for="email">Email</label>
                 <input
                   class="form__input"
@@ -212,20 +213,29 @@
                   required
                 />
               </div>
-              <div class="form__field--text">
+              <div class="form__field form__field--text">
                 <label class="form__label" for="text">Your message</label>
-                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <textarea
+                  class="form__text"
+                  name="text"
+                  id="text"
+                  cols="30"
+                  rows="10"
+                ></textarea>
               </div>
-              <button class="submit" type="submit">Send</button>
+              <button class="submit submit--primary" type="submit">Send</button>
             </form>
           </div>
         </section>
+        <div class="back-to-top">
+          <a href="#"> <i class="fa fa-angle-up"></i></a>
+        </div>
       </main>
 
       <footer>
         <div class="footer__content">
           <p class="footer__text">
-            Final project for course Koderka, www.czechitas.cz ✨
+            Final project for course Koderka, www.czechitas.cz
           </p>
           <p class="footer__text">
             Illustrations used on web by
@@ -242,5 +252,5 @@
     </div>
   </body>
 
-  <script src="/scr/script.js"></script>
+  <script src="/src/script.js"></script>
 </html>

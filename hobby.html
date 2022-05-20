@@ -15,7 +15,7 @@
       src="https://kit.fontawesome.com/4eb1136a11.js"
       crossorigin="anonymous"
     ></script>
-    <title>Mira´s Projects</title>
+    <title>Hobby</title>
   </head>
   <body>
     <div class="wrapper">
@@ -23,7 +23,9 @@
       <header class="header">
         <div class="header__content">
           <div class="header__inner">
-            <div class="header__logo">Mira</div>
+            <div class="header__logo">
+              <a href="#">Mira</a>
+            </div>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -52,7 +54,10 @@
       <main>
         <section class="gallery">
           <div class="gallery__content">
-            <img class="gallery__image" src="/images/art/1.jpg" alt="" />
+            <a data-fslightbox href="/images/art/1.jpg"
+              ><img class="gallery__image" src="/images/art/1.jpg" alt=""
+            /></a>
+
             <img class="gallery__image" src="/images/art/2.jpg" alt="" />
             <img class="gallery__image" src="/images/art/3.jpg" alt="" />
             <img class="gallery__image" src="/images/art/4.jpg" alt="" />
@@ -69,12 +74,15 @@
             <img class="gallery__image" src="/images/art/15.jpg" alt="" />
           </div>
         </section>
+        <div class="back-to-top">
+          <a href="#"> <i class="fa fa-angle-up"></i></a>
+        </div>
       </main>
 
       <footer>
         <div class="footer__content">
           <p class="footer__text">
-            Final project for course Koderka, www.czechitas.cz ✨
+            Final project for course Koderka, www.czechitas.cz
           </p>
           <p class="footer__text">
             Illustrations used on web by
@@ -90,5 +98,5 @@
       </footer>
     </div>
   </body>
-  <script src="/scr/script.js"></script>
+  <script src="/src/script.js"></script>
 </html>

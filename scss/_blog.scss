@@ -10,6 +10,18 @@
 
     h2 {
       margin: 0 0 1rem 0;
+      font-size: 1.7rem;
+      color: colors.$color-primary-2;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012),
+        0 2px 2px rgba(0, 0, 0, 0.012);
+    }
+
+    @media screen and (min-width: 780px) {
+      padding: 2rem 2.6rem;
+    }
+    @media screen and (min-width: 980px) {
+      padding: 2rem 3.6rem;
     }
   }
   &__articles {
@@ -47,28 +59,5 @@
     @media screen and (min-width: 780px) {
       grid-column: 3/4;
     }
-  }
-  &__btn a {
-    text-decoration: none;
-    padding: 0.25rem 0.6rem;
-    background: linear-gradient(
-      170deg,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(255, 255, 255, 0.6) 20%,
-      rgba(255, 255, 255, 0.1) 50%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
-      0px 0px 10px rgba(0, 0, 0, 0.15);
-    background-size: 150%;
-    background-position: right;
-    transition: 1s;
-  }
-  &__btn a:hover {
-    background-position: left;
-    color: colors.$color-primary-1;
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
-      0px 0px 10px rgba(0, 0, 0, 0.25);
   }
 }

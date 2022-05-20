@@ -8,12 +8,18 @@
     background-color: colors.$color-primary-1;
   }
   &__content:last-child {
-    padding-bottom: 2.7rem;
+    padding-bottom: 2.5rem;
     @media screen and (min-width: 480px) {
       padding-bottom: 1.3rem;
     }
   }
   &__text {
     margin: 0;
+  }
+  &__text:first-child {
+    margin-top: 0.5rem;
+  }
+  &__year {
+    margin: 0.2rem 0 0 0;
   }
 }

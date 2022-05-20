@@ -5,10 +5,15 @@ $font-header: 'Nunito', sans-serif;
 $border-radius-primary: 0.625rem;
 
 $font-size-mobile: 0.9rem;
+$font-size-tablet: 1rem;
+$font-size-menu: 1.1rem;
 
 html {
   box-sizing: border-box;
   font-family: $font-body;
+  color: #708090;
+  color: #313140;
+  line-height: 1.5;
 }
 *,
 ::before,
@@ -18,6 +23,7 @@ html {
 
 body {
   margin: 0;
+  font-size: $font-size-mobile;
 }
 
 .wrapper {
@@ -28,6 +34,35 @@ body {
 .year {
   text-align: center;
 }
+
+.button {
+  &--primary a {
+    text-decoration: none;
+    font-size: $font-size-mobile;
+    color: #313140;
+    padding: 0.25rem 0.6rem;
+    background: linear-gradient(
+      170deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.6) 20%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
+      0px 0px 10px rgba(0, 0, 0, 0.15);
+    background-size: 150%;
+    background-position: right;
+    transition: 1s;
+  }
+  &--primary a:hover {
+    background-position: left;
+    color: white;
+    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
+      0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
 .back-to-top .fa {
   display: inline-block;
   width: 2.5rem;
@@ -77,18 +112,32 @@ body {
 //------portfolio.html----
 .intro {
   &__content {
+    font-size: 0.9rem;
     margin: 2rem 1.6rem;
+    padding: 0 0.8rem 0.8rem 0.8rem;
     border: 2px solid black;
     background-color: white;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 680px) {
       display: flex;
       justify-content: space-evenly;
     }
+    @media screen and (min-width: 780px) {
+      margin: 2rem 2.6rem;
+    }
+    @media screen and (min-width: 980px) {
+      margin: 2rem 3.6rem;
+    }
   }
   &__image {
-    width: 250px;
+    width: 80%;
     @media screen and (min-width: 480px) {
-      width: 350px;
+      width: 70%;
+    }
+    @media screen and (min-width: 580px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 680px) {
+      width: 280px;
     }
   }
 }

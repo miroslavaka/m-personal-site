@@ -5,7 +5,6 @@
   &__list {
     display: flex;
     list-style: none;
-    /*mobile:*/
     justify-content: center;
     position: fixed;
     bottom: 0;
@@ -15,25 +14,43 @@
     background-color: colors.$color-portfolio-bg;
     box-shadow: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
       0px 2px 16px 0px rgba(14, 30, 37, 0.32);
-
+    z-index: 1;
     @media screen and (min-width: 480px) {
-      //tuto ma byt ina background-color, kukni
       background-color: transparent;
       position: relative;
       box-shadow: none;
     }
   }
-
   &__item:not(:last-child) {
     border-right: 0.06rem solid colors.$color-menu-items;
+    @media screen and (min-width: 480px) {
+      border: none;
+    }
   }
   &__link {
+    font-family: basics.$font-header;
     display: block;
     padding: 0.5rem;
+    font-size: basics.$font-size-mobile;
     text-decoration: none;
-    color: colors.$color-menu-items;
+    color: #313140;
     @media screen and (min-width: 480px) {
       color: colors.$color-white;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    @media screen and (min-width: 980px) {
+      font-size: 1.5rem;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012),
+        0 2px 2px rgba(0, 0, 0, 0.012);
+    }
+  }
+  &__link:hover {
+    text-decoration: underline;
+    transition: 1s;
+    @media screen and (min-width: 480px) {
+      text-decoration: none;
+      border-bottom: 1px solid white;
     }
   }
 }
