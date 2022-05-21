@@ -1,297 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/4eb1136a11.js"
-      crossorigin="anonymous"
-    ></script>
+---
+layout: home-template.njk
+title: Mira´s portfolio
+---
 
-    <title>Mira´s Portfolio</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!--HEADER-->
-      <header class="header">
-        <div class="header__content">
-          <div class="header__inner">
-            <div class="header__logo">
-              <a href="#">Mira</a>
-            </div>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/_site/about/index.html">About</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/_site/portfolio/index.html"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/_site/blog/index.html">Blog</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/_site/hobby/index.html">Hobby</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__hero">
-            <div class="header__image">
-              <img
-                class="hero__image"
-                src="/images/workspace.png"
-                alt="Workspace"
-              />
-              <div class="header__cursor">
-                &lt;<span class="header__cursor--animated">_</span>
-              </div>
-            </div>
-            <div class="header__text">
-              <h2>Hi,</h2>
-              <h3>I´m Mira</h3>
-              <p class="header__about">
-                Aspiring web/front-end developer and designer based in
-                Bratislava, Slovakia.
-              </p>
-              <p>
-                I create interactive things with code. I am learning how to do
-                it great.
-              </p>
-              <!-- <div class="header__text--btn">
-                <a href="">more about me...</a>
-              </div> -->
-              <div class="button button--primary">
-                <a href="">more about me...</a>
-              </div>
-            </div>
-          </div>
+<section class="portfolio">
+  <div class="portfolio__content">
+    <h2>My projects</h2>
+    <h5>- including this web -</h5>
+    <div class="portfolio__projects">
+      <div class="portfolio__project">
+        <h4 class="portfolio__title">To do list</h4>
+        <img
+          class="portfolio__image"
+          src="/images/projects/to-do-list.jpg"
+          alt="To do list"
+        />
+        <p class="portfolio__description">
+          Simple to do list to write activities and remove once any activity is
+          finished
+        </p>
+        <p class="portfolio__icons">
+          <img src="/images/icons/css.png" alt="CSS icon" />
+          <img src="/images/icons/html.png" alt="HTML icon" />
+          <img src="/images/icons/javascript.png" alt="Javascript icon" />
+        </p>
+        <div class="portfolio__links">
+          <a href="https://to-do-list-mk.netlify.app/" target="_blank">Demo</a>
+          <a href="https://github.com/miroslavaka/to-do-list" target="_blank"
+            >Github</a
+          >
         </div>
-      </header>
-
-      <!--MAIN-->
-      <main>
-        <!--SECTION PORTFOLIO-->
-        <section class="portfolio">
-          <div class="portfolio__content">
-            <h2>My projects</h2>
-            <h5>- including this web -</h5>
-            <div class="portfolio__projects">
-              <div class="portfolio__project">
-                <h4 class="portfolio__title">To do list</h4>
-                <img
-                  class="portfolio__image"
-                  src="/images/projects/to-do-list.jpg"
-                  alt="To do list"
-                />
-                <p class="portfolio__description">
-                  Simple to do list to write activities and remove once any
-                  activity is finished
-                </p>
-                <p class="portfolio__icons">
-                  <img src="/images/icons/css.png" alt="CSS icon" />
-                  <img src="/images/icons/html.png" alt="HTML icon" />
-                  <img
-                    src="/images/icons/javascript.png"
-                    alt="Javascript icon"
-                  />
-                </p>
-                <div class="portfolio__links">
-                  <a href="https://to-do-list-mk.netlify.app/" target="_blank"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://github.com/miroslavaka/to-do-list"
-                    target="_blank"
-                    >Github</a
-                  >
-                </div>
-              </div>
-              <div class="portfolio__project">
-                <h4 class="portfolio__title">Protect your vision</h4>
-                <img
-                  class="portfolio__image"
-                  src="/images/projects/protect-your-vision.jpg"
-                  alt="Protect your vision"
-                />
-                <p class="portfolio__description">
-                  Simple application where user selects time and after that time
-                  application runs music to remind the user to take the break
-                  and rest eyes.
-                </p>
-                <p class="portfolio__icons">
-                  <img src="/images/icons/css.png" alt="CSS icon" />
-                  <img src="/images/icons/html.png" alt="HTML icon" />
-                  <img
-                    src="/images/icons/javascript.png"
-                    alt="Javascript icon"
-                  />
-                </p>
-                <div class="portfolio__links">
-                  <a href="https://to-do-list-mk.netlify.app/" target="_blank"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://github.com/miroslavaka/to-do-list"
-                    target="_blank"
-                    >Github</a
-                  >
-                </div>
-              </div>
-              <div class="portfolio__project">
-                <h4 class="portfolio__title">Art quiz</h4>
-                <img
-                  class="portfolio__image"
-                  src="/images/projects/kviz-react.jpg"
-                  alt="Protect your vision"
-                />
-                <p class="portfolio__description">
-                  Simple quiz tests user knowledge from art topics. Quiz
-                  contains 3 options to select from and at the end tells the
-                  user the score.
-                </p>
-                <p class="portfolio__icons">
-                  <img src="/images/icons/css.png" alt="CSS icon" />
-                  <img src="/images/icons/html.png" alt="HTML icon" />
-                  <img
-                    src="/images/icons/javascript.png"
-                    alt="Javascript icon"
-                  />
-                  <img src="/images/icons/react.png" alt="React icon" />
-                </p>
-                <div class="portfolio__links">
-                  <a href="https://art-quiz-react.netlify.app/" target="_blank"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://github.com/miroslavaka/art-quiz"
-                    target="_blank"
-                    >Github</a
-                  >
-                </div>
-              </div>
-              <div class="button button--primary">
-                <a href="">all my projects...</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--SECTION BLOG-->
-        <section class="blog">
-          <div class="blog__content">
-            <h2>My writing</h2>
-            <div class="blog__articles">
-              <div class="blog__article">
-                <h3>Article 1</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Donec ullamcorper, libero in
-                  dignissim aliquet, tortor velit lobortis ante, in scelerisque
-                  diam ex sit amet sem.
-                </p>
-                <a class="blog__more" href="">Read more</a>
-              </div>
-              <div class="blog__article">
-                <h3>Article 2</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Donec ullamcorper, libero in
-                  dignissim aliquet, tortor velit lobortis ante, in scelerisque
-                  diam ex sit amet sem.
-                </p>
-                <a class="blog__more" href="">Read more</a>
-              </div>
-              <div class="blog__article">
-                <h3>Article 3</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Donec ullamcorper, libero in
-                  dignissim aliquet, tortor velit lobortis ante, in scelerisque
-                  diam ex sit amet sem.
-                </p>
-                <a class="blog__more" href="">Read more</a>
-              </div>
-              <div class="button button--primary">
-                <a href="">to my blog...</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--SECTION CONTACT-->
-        <section class="contact">
-          <h2>Contact</h2>
-          <div class="contact__content">
-            <div class="contact__left">
-              <div class="contact__text">
-                <p>I´m always looking for fun to work.</p>
-                <p>
-                  If you think I´d be a good match <br />
-                  <a href="mailto:kacmarova.miroslava@gmail.com">
-                    contact me via email</a
-                  >
-                </p>
-              </div>
-              <div class="contact__social">
-                <a href="https://github.com/miroslavaka" target="_blank"
-                  ><i class="fa fa-github"></i
-                ></a>
-                <a href="https://codepen.io/miraka" target="_blank"
-                  ><i class="fa fa-codepen"></i
-                ></a>
-                <a href="https://twitter.com/mirra_ka" target="_blank"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-              </div>
-              <div class="contact__greeting">
-                <p>Hey there</p>
-              </div>
-            </div>
-            <img
-              class="contact__image"
-              src="/images/female-notebook.png"
-              alt="Girl working on pc with coffee in hand"
-            />
-          </div>
-        </section>
-        <div class="back-to-top">
-          <a href="#"> <i class="fa fa-angle-up"></i></a>
+      </div>
+      <div class="portfolio__project">
+        <h4 class="portfolio__title">Protect your vision</h4>
+        <img
+          class="portfolio__image"
+          src="/images/projects/protect-your-vision.jpg"
+          alt="Protect your vision"
+        />
+        <p class="portfolio__description">
+          Simple application where user selects time and after that time
+          application runs music to remind the user to take the break and rest
+          eyes.
+        </p>
+        <p class="portfolio__icons">
+          <img src="/images/icons/css.png" alt="CSS icon" />
+          <img src="/images/icons/html.png" alt="HTML icon" />
+          <img src="/images/icons/javascript.png" alt="Javascript icon" />
+        </p>
+        <div class="portfolio__links">
+          <a href="https://to-do-list-mk.netlify.app/" target="_blank">Demo</a>
+          <a href="https://github.com/miroslavaka/to-do-list" target="_blank"
+            >Github</a
+          >
         </div>
-      </main>
-
-      <footer>
-        <div class="footer__content">
-          <p class="footer__text">
-            Final project for course Koderka, www.czechitas.cz
-          </p>
-          <p class="footer__text">
-            Illustrations used on web by
-            <a href="https://icons8.com/illustrations/author/CkHJmwURlxnt"
-              >Olha Khomich</a
-            >
-            from <a href="https://icons8.com/illustrations">Ouch!</a>
-          </p>
-          <p class="footer__year">
-            <span>© </span><span class="year"></span><span>, Mira</span>
-          </p>
+      </div>
+      <div class="portfolio__project">
+        <h4 class="portfolio__title">Art quiz</h4>
+        <img
+          class="portfolio__image"
+          src="/images/projects/kviz-react.jpg"
+          alt="Protect your vision"
+        />
+        <p class="portfolio__description">
+          Simple quiz tests user knowledge from art topics. Quiz contains 3
+          options to select from and at the end tells the user the score.
+        </p>
+        <p class="portfolio__icons">
+          <img src="/images/icons/css.png" alt="CSS icon" />
+          <img src="/images/icons/html.png" alt="HTML icon" />
+          <img src="/images/icons/javascript.png" alt="Javascript icon" />
+          <img src="/images/icons/react.png" alt="React icon" />
+        </p>
+        <div class="portfolio__links">
+          <a href="https://art-quiz-react.netlify.app/" target="_blank">Demo</a>
+          <a href="https://github.com/miroslavaka/art-quiz" target="_blank"
+            >Github</a
+          >
         </div>
-      </footer>
+      </div>
+      <div class="button button--primary">
+        <a href="">all my projects...</a>
+      </div>
     </div>
-    <script src="/src/script.js"></script>
-    <script src="/src/fslightbox.min.js"></script>
-  </body>
-</html>
+  </div>
+</section>
+
+<!--SECTION BLOG-->
+<section class="blog">
+  <div class="blog__content">
+    <h2>My writing</h2>
+    <div class="blog__articles">
+      <div class="blog__article">
+        <h3>Article 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
+          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
+        </p>
+        <a class="blog__more" href="">Read more</a>
+      </div>
+      <div class="blog__article">
+        <h3>Article 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
+          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
+        </p>
+        <a class="blog__more" href="">Read more</a>
+      </div>
+      <div class="blog__article">
+        <h3>Article 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
+          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
+        </p>
+        <a class="blog__more" href="">Read more</a>
+      </div>
+      <div class="button button--primary">
+        <a href="writing.html">to my blog...</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SECTION CONTACT-->
+<section class="contact">
+  <h2>Contact</h2>
+  <div class="contact__content">
+    <div class="contact__left">
+      <div class="contact__text">
+        <p>I´m always looking for fun to work.</p>
+        <p>
+          If you think I´d be a good match <br />
+          <a href="mailto:kacmarova.miroslava@gmail.com">
+            contact me via email</a
+          >
+        </p>
+      </div>
+      <div class="contact__social">
+        <a href="https://github.com/miroslavaka" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://codepen.io/miraka" target="_blank"
+          ><i class="fa fa-codepen"></i
+        ></a>
+        <a href="https://twitter.com/mirra_ka" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+      </div>
+      <div class="contact__greeting">
+        <p>Hey there</p>
+      </div>
+    </div>
+    <img
+      class="contact__image"
+      src="/images/female-notebook.png"
+      alt="Girl working on pc with coffee in hand"
+    />
+  </div>
+</section>
+<div class="back-to-top">
+  <a href="#"> <i class="fa fa-angle-up"></i></a>
+</div>

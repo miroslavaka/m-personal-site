@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4eb1136a11.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__content">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="#">Mira</a>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="/">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/about/">About</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/projects/">Portfolio</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/writing/">Writing</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/hobby/">Hobby</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        {{ content | safe }}
+      </main>
+      <footer>
+        <div class="footer__content">
+          <p class="footer__text">
+            Final project for course Koderka, www.czechitas.cz
+          </p>
+          <p class="footer__text">
+            Illustrations used on web by
+            <a href="https://icons8.com/illustrations/author/CkHJmwURlxnt"
+              >Olha Khomich</a
+            >
+            from <a href="https://icons8.com/illustrations">Ouch!</a>
+          </p>
+          <p class="footer__year">
+            <span>© </span><span class="year"></span><span>, Mira</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="/src/script.js"></script>
+</html>
