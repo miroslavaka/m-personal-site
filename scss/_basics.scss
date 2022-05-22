@@ -8,11 +8,12 @@ $font-size-mobile: 0.9rem;
 $font-size-tablet: 1rem;
 $font-size-menu: 1.1rem;
 
+$font-size-footer: 0.8rem;
+
 html {
   box-sizing: border-box;
   font-family: $font-body;
-  color: #708090;
-  color: #313140;
+  color: $color-font;
   line-height: 1.5;
 }
 *,
@@ -39,7 +40,7 @@ body {
   &--primary a {
     text-decoration: none;
     font-size: $font-size-mobile;
-    color: #313140;
+    color: $color-font;
     padding: 0.25rem 0.6rem;
     background: linear-gradient(
       170deg,
@@ -57,7 +58,7 @@ body {
   }
   &--primary a:hover {
     background-position: left;
-    color: white;
+    color: colors.$color-white;
     box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
       0px 0px 10px rgba(0, 0, 0, 0.25);
   }
@@ -115,8 +116,8 @@ body {
     font-size: 0.9rem;
     margin: 2rem 1.6rem;
     padding: 0 0.8rem 0.8rem 0.8rem;
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid colors.$color-font;
+    background-color: colors.$color-white;
     @media screen and (min-width: 680px) {
       display: flex;
       justify-content: space-evenly;

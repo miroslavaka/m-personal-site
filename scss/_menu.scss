@@ -33,7 +33,7 @@
     padding: 0.5rem;
     font-size: basics.$font-size-mobile;
     text-decoration: none;
-    color: #313140;
+    color: $color-font;
     @media screen and (min-width: 480px) {
       color: colors.$color-white;
       font-size: 1rem;
@@ -50,7 +50,7 @@
     transition: 1s;
     @media screen and (min-width: 480px) {
       text-decoration: none;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid colors.$color-white;
     }
   }
 }

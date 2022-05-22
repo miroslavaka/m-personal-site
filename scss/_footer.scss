@@ -3,7 +3,7 @@
 
 .footer {
   &__content {
-    font-size: 0.8rem;
+    font-size: basics.$font-size-footer;
     text-align: center;
     background-color: colors.$color-primary-1;
   }
