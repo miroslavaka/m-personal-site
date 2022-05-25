@@ -10,77 +10,51 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script
       src="https://kit.fontawesome.com/4eb1136a11.js"
       crossorigin="anonymous"
     ></script>
-    <title>Mira´s Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>{{ title }}</title>
   </head>
   <body>
     <div class="wrapper">
-      <!--HEADER-->
       <header class="header">
         <div class="header__content">
           <div class="header__inner">
-            <div class="header__logo">Mira</div>
+            <div class="header__logo">
+              <a href="#">Mira</a>
+            </div>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Home</a>
+                  <a class="menu__link" href="/">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="about.html">About</a>
+                  <a class="menu__link" href="/about/">About</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="portfolio.html">Portfolio</a>
+                  <a class="menu__link" href="/projects/">Portfolio</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="blog.html">Blog</a>
+                  <a class="menu__link" href="/writing/">Writing</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="hobby.html">Hobby</a>
+                  <a class="menu__link" href="/hobby/">Hobby</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
-
-      <!--MAIN-->
       <main>
-        <section class="intro">
-          <div class="intro__content">
-            <h1>How I created image slider</h1>
-            <div class="intro__summary">
-              <div class="intro__item">
-                <i class="fa fa-tag"></i>
-                <p>html, css, js</p>
-              </div>
-              <div class="intro__item">
-                <i class="fa fa-clock"></i>
-                <p>5 minutes read</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <article>
-          <div class="post">
-            <img
-              class="post__image"
-              src="../images/blog/image-slider.jpg"
-              alt="Image slider"
-            />
-            <div class="post__body"></div>
-          </div>
-        </article>
+        {{ content | safe }}
       </main>
-
-      <!--FOOTER-->
       <footer>
         <div class="footer__content">
           <p class="footer__text">
-            Final project for course Koderka, www.czechitas.cz ✨
+            Final project for course Koderka, www.czechitas.cz
           </p>
           <p class="footer__text">
             Illustrations used on web by
@@ -95,6 +69,8 @@
         </div>
       </footer>
     </div>
-    <script src="/scr/script.js"></script>
   </body>
+  <script src="/src/script.js"></script>
+  <script src="/src/index.min.js"></script>
+  <script src="/src/ityped.js"></script>
 </html>

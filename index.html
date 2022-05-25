@@ -1,5 +1,5 @@
 ---
-layout: home-template.njk
+layout: layouts/home-template.njk
 title: Mira´s portfolio
 ---
 
@@ -20,9 +20,9 @@ title: Mira´s portfolio
           finished
         </p>
         <p class="portfolio__icons">
-          <img src="/images/icons/css.png" alt="CSS icon" />
-          <img src="/images/icons/html.png" alt="HTML icon" />
-          <img src="/images/icons/javascript.png" alt="Javascript icon" />
+          <img src="/images/icons/css-grey.png" alt="CSS icon" />
+          <img src="/images/icons/html-grey.png" alt="HTML icon" />
+          <img src="/images/icons/javascript-grey.png" alt="Javascript icon" />
         </p>
         <div class="portfolio__links">
           <a href="https://to-do-list-mk.netlify.app/" target="_blank">Demo</a>
@@ -44,13 +44,17 @@ title: Mira´s portfolio
           eyes.
         </p>
         <p class="portfolio__icons">
-          <img src="/images/icons/css.png" alt="CSS icon" />
-          <img src="/images/icons/html.png" alt="HTML icon" />
-          <img src="/images/icons/javascript.png" alt="Javascript icon" />
+          <img src="/images/icons/css-grey.png" alt="CSS icon" />
+          <img src="/images/icons/html-grey.png" alt="HTML icon" />
+          <img src="/images/icons/javascript-grey.png" alt="Javascript icon" />
         </p>
         <div class="portfolio__links">
-          <a href="https://to-do-list-mk.netlify.app/" target="_blank">Demo</a>
-          <a href="https://github.com/miroslavaka/to-do-list" target="_blank"
+          <a href="https://protect-your-vision.netlify.app/" target="_blank"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/miroslavaka/protect-your-vision"
+            target="_blank"
             >Github</a
           >
         </div>
@@ -67,10 +71,10 @@ title: Mira´s portfolio
           options to select from and at the end tells the user the score.
         </p>
         <p class="portfolio__icons">
-          <img src="/images/icons/css.png" alt="CSS icon" />
-          <img src="/images/icons/html.png" alt="HTML icon" />
-          <img src="/images/icons/javascript.png" alt="Javascript icon" />
-          <img src="/images/icons/react.png" alt="React icon" />
+          <img src="/images/icons/css-grey.png" alt="CSS icon" />
+          <img src="/images/icons/html-grey.png" alt="HTML icon" />
+          <img src="/images/icons/javascript-grey.png" alt="Javascript icon" />
+          <img src="/images/icons/react-grey.png" alt="React icon" />
         </p>
         <div class="portfolio__links">
           <a href="https://art-quiz-react.netlify.app/" target="_blank">Demo</a>
@@ -80,52 +84,31 @@ title: Mira´s portfolio
         </div>
       </div>
       <div class="button button--primary">
-        <a href="">all my projects...</a>
+        <a href="/projects/">all my projects...</a>
       </div>
     </div>
   </div>
 </section>
 
-<!--SECTION BLOG-->
 <section class="blog">
   <div class="blog__content">
     <h2>My writing</h2>
     <div class="blog__articles">
+      {% for input in collections.writing | limit(3) %}
       <div class="blog__article">
-        <h3>Article 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a class="blog__more" href="">Read more</a>
+        <h3>{{input.data.title}}</h3>
+        <p>{{input.data.perex}}</p>
+        <p><a href="{{input.url}}">Read post</a></p>
       </div>
-      <div class="blog__article">
-        <h3>Article 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a class="blog__more" href="">Read more</a>
-      </div>
-      <div class="blog__article">
-        <h3>Article 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a class="blog__more" href="">Read more</a>
-      </div>
+      {% endfor %}
+
       <div class="button button--primary">
-        <a href="writing.html">to my blog...</a>
+        <a href="/writing/">to my blog...</a>
       </div>
     </div>
   </div>
 </section>
 
-<!--SECTION CONTACT-->
 <section class="contact">
   <h2>Contact</h2>
   <div class="contact__content">

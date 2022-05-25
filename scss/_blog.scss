@@ -10,36 +10,36 @@
 
     h2 {
       margin: 0 0 1rem 0;
-      font-size: 1.7rem;
+      font-size: 2rem;
       color: colors.$color-primary-2;
       text-align: center;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012),
-        0 2px 2px rgba(0, 0, 0, 0.012);
+        0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.012);
     }
 
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 48.75rem) {
       padding: 2rem 2.6rem;
     }
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 61.25rem) {
       padding: 2rem 3.6rem;
     }
   }
   &__articles {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 30rem) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 48.75rem) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   &__articles:last-child {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 30rem) {
       align-items: center;
       justify-items: center;
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 48.75rem) {
       align-items: stretch;
     }
   }
@@ -56,7 +56,7 @@
     text-decoration: none;
   }
   &__btn {
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 48.75rem) {
       grid-column: 3/4;
     }
   }

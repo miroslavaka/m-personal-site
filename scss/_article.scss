@@ -9,7 +9,7 @@
 .post {
   &__image {
     width: 250px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 30rem) {
       width: 350px;
     }
   }

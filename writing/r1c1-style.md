@@ -1,3 +1,13 @@
+---
+layout: layouts/article.njk
+title: R1C1 formula
+date: 2022-05-22T14:30
+perex: In this article I am writing about construction of r1c1 formula in excel format
+photo: excel-5.jpg
+alt: r1c1 formula
+tags: writing
+---
+
 Formulas in excel are very powerful and the style how excel write formulas is so called A1 style. But macro recorder uses formula R1C1 (R[1]C[1]) style.
 
 ![Excel5](/images/blog/excel-5.jpg)

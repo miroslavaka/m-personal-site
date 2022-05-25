@@ -13,7 +13,7 @@ $font-size-footer: 0.8rem;
 html {
   box-sizing: border-box;
   font-family: $font-body;
-  color: $color-font;
+  color: colors.$color-primary-font;
   line-height: 1.5;
 }
 *,
@@ -40,7 +40,7 @@ body {
   &--primary a {
     text-decoration: none;
     font-size: $font-size-mobile;
-    color: $color-font;
+    color: colors.$color-primary-font;
     padding: 0.25rem 0.6rem;
     background: linear-gradient(
       170deg,
@@ -76,10 +76,10 @@ body {
   right: 1rem;
   bottom: 6.5rem;
   box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 30rem) {
     bottom: 4rem;
   }
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 48.75rem) {
     bottom: 2.5rem;
   }
 }
@@ -116,28 +116,28 @@ body {
     font-size: 0.9rem;
     margin: 2rem 1.6rem;
     padding: 0 0.8rem 0.8rem 0.8rem;
-    border: 2px solid colors.$color-font;
+    border: 2px solid colors.$color-primary-font;
     background-color: colors.$color-white;
-    @media screen and (min-width: 680px) {
+    @media screen and (min-width: 42.5rem) {
       display: flex;
       justify-content: space-evenly;
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 48.75rem) {
       margin: 2rem 2.6rem;
     }
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 61.25rem) {
       margin: 2rem 3.6rem;
     }
   }
   &__image {
     width: 80%;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 30rem) {
       width: 70%;
     }
-    @media screen and (min-width: 580px) {
+    @media screen and (min-width: 36.25rem) {
       width: 50%;
     }
-    @media screen and (min-width: 680px) {
+    @media screen and (min-width: 42.5rem) {
       width: 280px;
     }
   }

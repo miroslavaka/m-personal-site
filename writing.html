@@ -1,5 +1,5 @@
 ---
-layout: main-template.njk
+layout: layouts/article.njk
 title: Writing
 ---
 
@@ -26,55 +26,17 @@ title: Writing
     </div>
   </div>
 </section>
-<!--SECTION BLOG-->
+
 <section class="blog">
   <div class="blog__content">
     <div class="blog__articles">
+      {% for input in collections.writing | reverse%}
       <div class="blog__article">
-        <h3>Article 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a href="/blog/image-slider.md">Read post</a>
+        <h3>{{input.data.title}}</h3>
+        <p>{{input.data.perex}}</p>
+        <p><a href="{{input.url}}">Read post</a></p>
       </div>
-      <div class="blog__article">
-        <h3>Article 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a href="/blog/css-selectors.md">Read post</a>
-      </div>
-      <div class="blog__article">
-        <h3>Article 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a href="/blog/js-outputs.md">Read post</a>
-      </div>
-      <div class="blog__article">
-        <h3>Article 4</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a href="#">Read post</a>
-      </div>
-      <div class="blog__article">
-        <h3>Article 5</h3>
-        <p>
-          Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec ullamcorper, libero in dignissim aliquet,
-          tortor velit lobortis ante, in scelerisque diam ex sit amet sem.
-        </p>
-        <a href="#">Read post</a>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
