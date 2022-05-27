@@ -1,18 +1,16 @@
 @use 'colors';
 @use 'basics';
+@use 'mixins';
 
 .about {
-  //bg-color nefuguje - je pridany inline v html
   &__content {
     padding: 2rem 1.6rem 2rem 1.6rem;
-    font-size: basics.$font-size-mobile;
+    font-size: basics.$font-size-f3;
     @media screen and (min-width: 30rem) {
       padding: 3rem 2.4rem;
     }
     @media screen and (min-width: 48.75rem) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+      @include grid(2);
     }
   }
   &__right,
@@ -24,16 +22,12 @@
     h1 {
       text-align: center;
     }
-    @media screen and (min-width: 48.75rem) {
-      //grid-column: 2/3;
-      // grid-row: 2/3;
-    }
   }
-  &__left {
-    margin-bottom: 1rem;
-    @media screen and (min-width: 48.75rem) {
-      margin-bottom: 0;
-    }
+}
+&__left {
+  margin-bottom: 1rem;
+  @media screen and (min-width: 48.75rem) {
+    margin-bottom: 0;
   }
 }
 .tools {
@@ -45,7 +39,7 @@
     width: 40px;
   }
   &__text {
-    font-size: 0.8rem;
+    font-size: colors.$font-size-f2;
   }
 }
 .custom--btn {
@@ -53,8 +47,7 @@
   height: 60px;
   display: inline-block;
   color: colors.$color-white;
-  font-size: 0.7rem;
-  //text-align: center;
+  font-size: colors.$font-size-f1;
   padding: 10px;
   border-radius: 50%;
   margin: 10px 15px;
@@ -73,7 +66,6 @@
   &__form {
     margin-left: auto;
     margin-right: auto;
-    //margin: auto;
     padding: 2rem 3rem;
     @media screen and (min-width: 30rem) {
       padding: 2rem 5rem;
@@ -85,13 +77,10 @@
 }
 .form {
   @media screen and (min-width: 30rem) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    @include grid(1);
   }
 
   &__field {
-    //width: 100%;
     display: flex;
     &--email {
       @media screen and (min-width: 48.75rem) {
@@ -106,7 +95,7 @@
   }
   &__label {
     flex: 0 0 100px;
-    font-size: basics.$font-size-mobile;
+    font-size: basics.$font-size-f3;
     color: colors.$color-white;
   }
   &__input,
@@ -118,7 +107,7 @@
     grid-column: 2/3;
     justify-self: center;
     text-decoration: none;
-    font-size: basics.$font-size-mobile;
+    font-size: basics.$font-size-f3;
     color: colors.$color-primary-font;
     padding: 0.5rem 2.5rem;
     background: linear-gradient(
@@ -129,8 +118,7 @@
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0) 100%
     );
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
-      0px 0px 10px rgba(0, 0, 0, 0.15);
+    @include shadow-box-1;
     background-size: 150%;
     background-position: right;
     border: none;
@@ -141,7 +129,6 @@
   .primary:hover {
     background-position: left;
     color: colors.$color-white;
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
-      0px 0px 10px rgba(0, 0, 0, 0.25);
+    @include shadow-box-2;
   }
 }

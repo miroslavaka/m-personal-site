@@ -1,6 +1,6 @@
 @use 'colors';
 @use 'basics';
-
+@use 'mixins';
 .menu {
   &__list {
     display: flex;
@@ -31,18 +31,17 @@
     font-family: basics.$font-header;
     display: block;
     padding: 0.5rem;
-    font-size: basics.$font-size-mobile;
+    font-size: basics.$font-size-f3;
     text-decoration: none;
     color: colors.$color-primary-font;
     @media screen and (min-width: 30rem) {
       color: colors.$color-white;
-      font-size: 1rem;
+      font-size: colors.$font-size-f4;
       font-weight: 500;
     }
     @media screen and (min-width: 61.25rem) {
-      font-size: 1.5rem;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012),
-        0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.012);
+      font-size: colors.$font-size-f6;
+      @include shadow-text-primary;
     }
   }
   &__link:hover {

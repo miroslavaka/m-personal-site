@@ -1,18 +1,23 @@
 @use 'colors';
+@use 'basics';
+@use 'mixins';
 
 $font-body: 'Open Sans', sans-serif;
 $font-header: 'Nunito', sans-serif;
 $border-radius-primary: 0.625rem;
 
-$font-size-mobile: 0.9rem;
-$font-size-tablet: 1rem;
-$font-size-menu: 1.1rem;
-
-$font-size-footer: 0.8rem;
+$font-size-f1: 0.7rem;
+$font-size-f2: 0.8rem;
+$font-size-f3: 0.9rem;
+$font-size-f4: 1rem;
+$font-size-f5: 1.1rem;
+$font-size-f6: 1.5rem;
+$font-size-f7: 2rem;
+$font-size-f8: 2.5rem;
 
 html {
   box-sizing: border-box;
-  font-family: $font-body;
+  font-family: basics.$font-body;
   color: colors.$color-primary-font;
   line-height: 1.5;
 }
@@ -24,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  font-size: $font-size-mobile;
+  font-size: basics.$font-size-f3;
 }
 
 .wrapper {
@@ -39,7 +44,7 @@ body {
 .button {
   &--primary a {
     text-decoration: none;
-    font-size: $font-size-mobile;
+    font-size: basics.$font-size-f3;
     color: colors.$color-primary-font;
     padding: 0.25rem 0.6rem;
     background: linear-gradient(
@@ -50,8 +55,7 @@ body {
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0) 100%
     );
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
-      0px 0px 10px rgba(0, 0, 0, 0.15);
+    @include shadow-box-1;
     background-size: 150%;
     background-position: right;
     transition: 1s;
@@ -59,8 +63,7 @@ body {
   &--primary a:hover {
     background-position: left;
     color: colors.$color-white;
-    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
-      0px 0px 10px rgba(0, 0, 0, 0.25);
+    @include shadow-box-2;
   }
 }
 
@@ -113,7 +116,7 @@ body {
 //------portfolio.html----
 .intro {
   &__content {
-    font-size: 0.9rem;
+    font-size: basics.$font-size-f3;
     margin: 2rem 1.6rem;
     padding: 0 0.8rem 0.8rem 0.8rem;
     border: 2px solid colors.$color-primary-font;
