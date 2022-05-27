@@ -26,48 +26,16 @@
             <div class="header__logo">
               <a href="#">Mira</a>
             </div>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="/">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/about/">About</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/projects/">Portfolio</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/writing/">Writing</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/hobby/">Hobby</a>
-                </li>
-              </ul>
-            </nav>
+
+            {% include 'partials/menu.njk' %}
           </div>
         </div>
       </header>
       <main>
         {{ content | safe }}
       </main>
-      <footer>
-        <div class="footer__content">
-          <p class="footer__text">
-            Final project for course Koderka, www.czechitas.cz
-          </p>
-          <p class="footer__text">
-            Illustrations used on web by
-            <a href="https://icons8.com/illustrations/author/CkHJmwURlxnt"
-              >Olha Khomich</a
-            >
-            from <a href="https://icons8.com/illustrations">Ouch!</a>
-          </p>
-          <p class="footer__year">
-            <span>© </span><span class="year"></span><span>, Mira</span>
-          </p>
-        </div>
-      </footer>
+
+      {% include 'partials/footer.njk' %}
     </div>
   </body>
   <script src="/src/script.js"></script>
