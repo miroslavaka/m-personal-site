@@ -1,7 +1,6 @@
 @use 'colors';
 @use 'basics';
 @use 'mixins';
-
 .header {
   background-image: linear-gradient(
     90deg,
@@ -22,9 +21,6 @@
     @media screen and (min-width: 42.5rem) {
       padding: 0 3.9rem;
     }
-    // @media screen and (min-width: 780px) {
-    //   padding: 0 3.6rem;
-    // }
     @media screen and (min-width: 67.5rem) {
       padding: 0 4.5rem;
     }
@@ -55,27 +51,27 @@
       font-weight: 500;
       @media screen and (min-width: 61.25rem) {
         font-size: 2.5rem;
-        @include shadow-text-primary;
+        @include mixins.shadow-text-primary;
       }
     }
   }
   &__hero {
     padding: 2rem 0 3.5rem 0;
-    font-size: basics.$font-size-mobile;
+    font-size: basics.$font-size-f3;
     @media screen and (min-width: 42.5rem) {
       padding: 2.5rem 0;
     }
     @media screen and (min-width: 48.75rem) {
-      @include grid(2.5);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
       padding: 4rem 0 7rem 0;
     }
     @media screen and (min-width: 61.25rem) {
-      //gap: 2.5rem;
       padding-bottom: 8rem;
     }
     @media screen and (min-width: 67.5rem) {
       gap: 3.5rem;
-      // padding-bottom: 10rem;
     }
     @media screen and (min-width: 80rem) {
       gap: 4.5rem;
@@ -107,7 +103,7 @@
   }
   &__text {
     h2 {
-      font-size: $font-size-f6;
+      font-size: basics.$font-size-f6;
     }
     h3 {
       font-size: 1.4rem;

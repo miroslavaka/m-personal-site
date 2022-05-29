@@ -5,13 +5,15 @@
 .gallery {
   h2 {
     margin: 2rem 0 0 0;
-    font-size: colors.$font-size-f6;
+    font-size: basics.$font-size-f6;
     color: colors.$color-menu-items;
     text-align: center;
-    @include shadow-text-secondary;
+    @include mixins.shadow-text-secondary;
   }
   &__content {
-    @include grid(0.3);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
     padding: 3rem 1.6rem;
 
     @media screen and (min-width: 30rem) {

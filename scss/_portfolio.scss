@@ -4,16 +4,17 @@
 
 .portfolio {
   background-color: colors.$color-portfolio-bg;
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
 
   &__content {
     padding: 2rem 1.6rem;
     h2 {
+      font-size: 2rem;
       margin-top: 0;
-      font-size: colors.$font-size-f7;
+      font-size: basics.$font-size-f7;
       color: colors.$color-primary-1;
       text-align: center;
-      @include shadow-text-primary;
+      @include mixins.shadow-text-primary;
     }
     @media screen and (min-width: 48.75rem) {
       padding: 2rem 2.6rem;
@@ -24,7 +25,9 @@
   }
   &__projects {
     @media screen and (min-width: 30rem) {
-      @include grid(1);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
     @media screen and (min-width: 48.75rem) {
       grid-template-columns: repeat(3, 1fr);
@@ -51,7 +54,6 @@
       margin: 0.4rem 0;
     }
   }
-
   &__image {
     width: 100%;
     border-radius: basics.$border-radius-primary;
@@ -71,13 +73,11 @@
       width: 2rem;
     }
   }
-
   &__btn {
     @media screen and (min-width: 48.75rem) {
       grid-column: 3/4;
     }
   }
-
   &__links {
     text-align: center;
     margin-bottom: 0.5rem;

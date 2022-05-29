@@ -1,5 +1,4 @@
 @use 'colors';
-@use 'basics';
 @use 'mixins';
 
 $font-body: 'Open Sans', sans-serif;
@@ -17,7 +16,7 @@ $font-size-f8: 2.5rem;
 
 html {
   box-sizing: border-box;
-  font-family: basics.$font-body;
+  font-family: $font-body;
   color: colors.$color-primary-font;
   line-height: 1.5;
 }
@@ -29,9 +28,8 @@ html {
 
 body {
   margin: 0;
-  font-size: basics.$font-size-f3;
+  font-size: $font-size-f3;
 }
-
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -40,11 +38,10 @@ body {
 .year {
   text-align: center;
 }
-
 .button {
   &--primary a {
     text-decoration: none;
-    font-size: basics.$font-size-f3;
+    font-size: $font-size-f3;
     color: colors.$color-primary-font;
     padding: 0.25rem 0.6rem;
     background: linear-gradient(
@@ -55,7 +52,7 @@ body {
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0) 100%
     );
-    @include shadow-box-1;
+    @include mixins.shadow-box-1;
     background-size: 150%;
     background-position: right;
     transition: 1s;
@@ -63,10 +60,9 @@ body {
   &--primary a:hover {
     background-position: left;
     color: colors.$color-white;
-    @include shadow-box-2;
+    @include mixins.shadow-box-2;
   }
 }
-
 .back-to-top .fa {
   display: inline-block;
   width: 2.5rem;
@@ -99,7 +95,6 @@ body {
     opacity: 1;
   }
 }
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -116,7 +111,7 @@ body {
 //------portfolio.html----
 .intro {
   &__content {
-    font-size: basics.$font-size-f3;
+    font-size: $font-size-f3;
     margin: 2rem 1.6rem;
     padding: 0 0.8rem 0.8rem 0.8rem;
     border: 2px solid colors.$color-primary-font;

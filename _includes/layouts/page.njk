@@ -1,0 +1,14 @@
+---
+layout: layouts/main-template.njk
+---
+
+<main>
+  <article>
+    <div class="post">
+      <p class="post__perex">
+        {{ perex }}
+      </p>
+      {{ content | safe }}
+    </div>
+  </article>
+</main>

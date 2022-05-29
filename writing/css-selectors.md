@@ -1,14 +1,14 @@
 ---
 layout: layouts/article.njk
 title: Css selectors
-date: 2022-05-22T14:30
+date: 2022-05-22T15:30
 perex: In this article I am writing about basic css selectors
 photo: css-selectors.jpg
 alt: Types of css selectors
+topics: html, css
+timetoread: 5 minutes to read
 tags: writing
 ---
-
-![CSS selectors](/images/blog/css-selectors.jpg)
 
 Let´s have an example to practice these selectors. Create new html file named index.html and add following code to this file:
 

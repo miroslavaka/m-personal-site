@@ -5,10 +5,10 @@ date: 2022-05-22T14:30
 perex: In this article I am writing about basic js outputs
 photo: js-outputs.jpg
 alt: JS outputs
+topics: html, css, js
+timetoread: 5 minutes to read
 tags: writing
 ---
-
-![JS outputs](/images/blog/js-outputs.jpg)
 
 JavaScript handles output data in different ways. They are sent on screen using function or method:
 

@@ -1,34 +1,32 @@
 @use 'colors';
 @use 'basics';
 @use 'mixins';
-
 .contact {
   background-color: colors.$color-primary-1;
   padding-top: 2rem;
   h2 {
     color: colors.$color-white;
     text-align: center;
-    font-size: colors.$font-size-f7;
-    @include shadow-text-primary;
+    font-size: basics.$font-size-f7;
+    @include mixins.shadow-text-primary;
     margin: 0;
   }
   &__content {
     padding: 0 1.6rem;
-    font-size: colors.$font-size-f3;
-
+    font-size: basics.$font-size-f3;
     @media screen and (min-width: 48.75rem) {
-      font-size: colors.$font-size-f5;
+      font-size: basics.$font-size-f5;
     }
     p {
       margin: 0;
     }
-
     @media screen and (min-width: 30rem) {
       padding: 0 2.4rem;
     }
-
     @media screen and (min-width: 42.5rem) {
-      @include grid(1);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
       padding: 0 2.8em;
     }
     @media screen and (min-width: 42.5rem) {
@@ -50,7 +48,6 @@
       padding: 2rem 10rem;
     }
   }
-
   &__greeting {
     text-align: center;
   }
@@ -63,7 +60,7 @@
     padding: 2.5rem 1rem 2rem 1rem;
     i {
       color: colors.$color-white;
-      font-size: colors.$font-size-f7;
+      font-size: basics.$font-size-f7;
       padding-left: 1rem;
     }
   }
@@ -81,7 +78,6 @@
     @media screen and (min-width: 42.5rem) {
       width: 100%;
     }
-
     @media screen and (min-width: 61.25rem) {
       width: 85%;
     }

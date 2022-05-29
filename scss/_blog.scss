@@ -14,7 +14,7 @@
       font-size: 2rem;
       color: colors.$color-primary-2;
       text-align: center;
-      @include shadow-text-primary;
+      @include mixins.shadow-text-primary;
     }
 
     @media screen and (min-width: 48.75rem) {
@@ -26,7 +26,9 @@
   }
   &__articles {
     @media screen and (min-width: 30rem) {
-      @include grid(1);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
     @media screen and (min-width: 48.75rem) {
       grid-template-columns: repeat(3, 1fr);

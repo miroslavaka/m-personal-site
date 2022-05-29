@@ -27,6 +27,14 @@
       border: none;
     }
   }
+  &__item--active::after {
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    background: colors.$color-white;
+  }
   &__link {
     font-family: basics.$font-header;
     display: block;
@@ -36,12 +44,12 @@
     color: colors.$color-primary-font;
     @media screen and (min-width: 30rem) {
       color: colors.$color-white;
-      font-size: colors.$font-size-f4;
+      font-size: basics.$font-size-f4;
       font-weight: 500;
     }
     @media screen and (min-width: 61.25rem) {
-      font-size: colors.$font-size-f6;
-      @include shadow-text-primary;
+      font-size: basics.$font-size-f6;
+      @include mixins.shadow-text-primary;
     }
   }
   &__link:hover {

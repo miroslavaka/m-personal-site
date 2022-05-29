@@ -1,18 +1,26 @@
 <nav class="menu">
   <ul class="menu__list">
-    <li class="menu__item">
+    <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}">
       <a class="menu__link" href="/">Home</a>
     </li>
-    <li class="menu__item">
+    <li
+      class="menu__item {{ 'menu__item--active' if page.fileSlug === 'about' }}"
+    >
       <a class="menu__link" href="/about/">About</a>
     </li>
-    <li class="menu__item">
+    <li
+      class="menu__item {{ 'menu__item--active' if page.fileSlug === 'projects' }}"
+    >
       <a class="menu__link" href="/projects/">Portfolio</a>
     </li>
-    <li class="menu__item">
+    <li
+      class="menu__item {{ 'menu__item--active' if page.fileSlug === 'writing' }}"
+    >
       <a class="menu__link" href="/writing/">Writing</a>
     </li>
-    <li class="menu__item">
+    <li
+      class="menu__item {{ 'menu__item--active' if page.fileSlug === 'hobby' }}"
+    >
       <a class="menu__link" href="/hobby/">Hobby</a>
     </li>
   </ul>

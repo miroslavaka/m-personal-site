@@ -2,10 +2,16 @@
 @use 'basics';
 
 .post {
+  padding: 0 2rem;
+  @media screen and (min-width: 48.75rem) {
+    padding: 0 5rem;
+  }
   &__image {
-    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     @media screen and (min-width: 30rem) {
-      width: 350px;
+      width: 22rem;
     }
   }
 }

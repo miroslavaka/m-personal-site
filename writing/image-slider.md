@@ -1,14 +1,15 @@
 ---
 layout: layouts/article.njk
 title: Image slider
-date: 2022-05-22T14:30
+date: 2022-05-22T15:00
 perex: In this article I am writing about step by step process of image slider creation
 photo: image-slider.jpg
 alt: Image of slider
+topics: html, css, js
+timetoread: 5 minutes to read
 tags: writing
 ---
 
-![Image slider](/images/blog/image-slider.jpg)
 In my self-study of programming, image slider becomes one of the first a bit more complex exercises I am trying to go through.
 In this exercise I am going to use HTML, CSS and Javascript.
 

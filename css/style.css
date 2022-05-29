@@ -238,7 +238,6 @@ body {
 }
 @media screen and (min-width: 61.25rem) {
   .header__hero {
-    gap: 2.5rem;
     padding-bottom: 8rem;
   }
 }
@@ -309,6 +308,14 @@ body {
     border: none;
   }
 }
+.menu__item--active::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  background: #ffffff;
+}
 .menu__link {
   font-family: "Nunito", sans-serif;
   display: block;
@@ -343,12 +350,12 @@ body {
 
 .portfolio {
   background-color: #eeeef0;
-  background-color: whitesmoke;
 }
 .portfolio__content {
   padding: 2rem 1.6rem;
 }
 .portfolio__content h2 {
+  font-size: 2rem;
   margin-top: 0;
   font-size: 2rem;
   color: #bbe0d2;
@@ -487,7 +494,7 @@ body {
 .blog__article {
   font-size: 0.9rem;
   background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0.6rem 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid #eeeef0;
   border-radius: 0.625rem;
   padding: 0 0.8rem 0.8rem 0.8rem;
@@ -540,7 +547,7 @@ body {
 }
 @media screen and (min-width: 42.5rem) {
   .contact__content {
-    padding: 3.2em;
+    padding: 0 3.2em;
   }
 }
 @media screen and (min-width: 48.75rem) {
@@ -586,27 +593,22 @@ body {
 }
 .contact__image {
   width: 100%;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
 @media screen and (min-width: 30rem) {
   .contact__image {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem;
     width: 90%;
   }
 }
 @media screen and (min-width: 36.25rem) {
   .contact__image {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: 0 3rem;
     width: 75%;
   }
 }
 @media screen and (min-width: 42.5rem) {
   .contact__image {
-    margin-left: 3rem;
-    margin-right: 3rem;
     width: 100%;
   }
 }
@@ -641,9 +643,6 @@ body {
 }
 .footer__text {
   margin: 0;
-}
-.footer__text:first-child {
-  margin-top: 0.5rem;
 }
 .footer__year {
   margin: 0.2rem 0 0 0;
@@ -689,22 +688,23 @@ body {
 }
 .tools__image {
   width: 40px;
+  margin: 0.2rem;
 }
 .tools__text {
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .custom--btn {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   display: inline-block;
+  padding: 0.4rem;
+  margin: 1.1rem;
   color: #ffffff;
   font-size: 0.7rem;
-  padding: 10px;
   border-radius: 50%;
-  margin: 10px 15px;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 .custom--btn:nth-child(3n) {
@@ -715,58 +715,74 @@ body {
   background-color: #eac4d5;
 }
 
-.contact__form {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem 3rem;
+.cont {
+  background-color: #bbe0d2;
 }
-@media screen and (min-width: 30rem) {
-  .contact__form {
-    padding: 2rem 5rem;
-  }
-}
-@media screen and (min-width: 48.75rem) {
-  .contact__form {
-    padding: 2rem 15rem;
-  }
+.cont__text {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
 }
 
-@media screen and (min-width: 30rem) {
+.form {
+  padding: 1rem 2rem 5rem 2rem;
+}
+@media screen and (min-width: 48.75rem) {
   .form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    padding: 1rem 5rem 5rem 5rem;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .form {
+    padding: 1rem 10rem 5rem 10rem;
+  }
+}
+@media screen and (min-width: 61.25rem) {
+  .form {
+    padding: 1rem 15rem 5rem 15rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .form {
+    padding: 1rem 20rem 5rem 20rem;
   }
 }
 .form__field {
   display: flex;
-}
-@media screen and (min-width: 48.75rem) {
-  .form__field--email {
-    grid-column: 1/-1;
-  }
-}
-@media screen and (min-width: 48.75rem) {
-  .form__field--text {
-    grid-column: 1/-1;
-  }
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 .form__label {
-  flex: 0 0 100px;
-  font-size: 0.9rem;
-  color: #ffffff;
+  flex: 0 0 6rem;
 }
 .form__input, .form__text {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+}
+.form__input__text, .form__text__text {
   flex: 1 1 100%;
   padding: 0.5rem;
+  margin-bottom: 5rem;
 }
-.form .submit {
+.form__submit {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media screen and (min-width: 48.75rem) {
+  .form__submit {
+    position: relative;
+    grid-row: -2/-1;
+  }
+}
+.form__submit--primary {
   grid-column: 2/3;
-  justify-self: center;
-  text-decoration: none;
   font-size: 0.9rem;
   color: #313140;
   padding: 0.5rem 2.5rem;
+  margin: 1rem 0;
   background: linear-gradient(170deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
   box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.15);
   background-size: 150%;
@@ -776,7 +792,7 @@ body {
   cursor: pointer;
   transition: 1s;
 }
-.form .primary:hover {
+.form__submit--primary:hover {
   background-position: left;
   color: #ffffff;
   box-shadow: inset 0px 3px 5px rgb(255, 255, 255), 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -866,11 +882,21 @@ body {
   background-color: #f3e5ab;
 }
 
+.post {
+  padding: 0 2rem;
+}
+@media screen and (min-width: 48.75rem) {
+  .post {
+    padding: 0 5rem;
+  }
+}
 .post__image {
-  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 @media screen and (min-width: 30rem) {
   .post__image {
-    width: 350px;
+    width: 22rem;
   }
 }/*# sourceMappingURL=style.css.map */

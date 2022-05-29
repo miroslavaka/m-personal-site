@@ -10,7 +10,9 @@
       padding: 3rem 2.4rem;
     }
     @media screen and (min-width: 48.75rem) {
-      @include grid(2);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
     }
   }
   &__right,
@@ -23,13 +25,14 @@
       text-align: center;
     }
   }
-}
-&__left {
-  margin-bottom: 1rem;
-  @media screen and (min-width: 48.75rem) {
-    margin-bottom: 0;
+  &__left {
+    margin-bottom: 1rem;
+    @media screen and (min-width: 48.75rem) {
+      margin-bottom: 0;
+    }
   }
 }
+
 .tools {
   &__content {
     padding: 2rem 1.6rem;
@@ -37,98 +40,123 @@
   }
   &__image {
     width: 40px;
+    margin: 0.2rem;
   }
   &__text {
-    font-size: colors.$font-size-f2;
+    font-size: basics.$font-size-f2;
+    text-align: center;
   }
 }
 .custom--btn {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   display: inline-block;
+  padding: 0.4rem;
+  margin: 1.1rem;
   color: colors.$color-white;
-  font-size: colors.$font-size-f1;
-  padding: 10px;
+  font-size: basics.$font-size-f1;
   border-radius: 50%;
-  margin: 10px 15px;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 .custom--btn:nth-child(3n) {
   background-color: colors.$color-primary-3;
 }
-
 .custom--btn:nth-child(3n + 1) {
   background-color: colors.$color-primary-2;
 }
-.contact {
-  &__form {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem 3rem;
-    @media screen and (min-width: 30rem) {
-      padding: 2rem 5rem;
-    }
-    @media screen and (min-width: 48.75rem) {
-      padding: 2rem 15rem;
-    }
+.cont {
+  background-color: colors.$color-primary-1;
+  &__text {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    color: colors.$color-white;
   }
 }
 .form {
-  @media screen and (min-width: 30rem) {
-    @include grid(1);
+  padding: 1rem 2rem 5rem 2rem;
+  @media screen and (min-width: 48.75rem) {
+    padding: 1rem 5rem 5rem 5rem;
+  }
+  @media screen and (min-width: 55rem) {
+    padding: 1rem 10rem 5rem 10rem;
+  }
+  @media screen and (min-width: 61.25rem) {
+    padding: 1rem 15rem 5rem 15rem;
+  }
+  @media screen and (min-width: 80rem) {
+    padding: 1rem 20rem 5rem 20rem;
   }
 
   &__field {
     display: flex;
-    &--email {
-      @media screen and (min-width: 48.75rem) {
-        grid-column: 1/-1;
-      }
-    }
-    &--text {
-      @media screen and (min-width: 48.75rem) {
-        grid-column: 1/-1;
-      }
-    }
+    justify-content: center;
+    margin-bottom: 0.5rem;
+
+    // &--email {
+    //   @media screen and (min-width: 48.75rem) {
+    //     grid-column: 1/-1;
+    //     width: 100%;
+    //   }
+    // }
+    // &--text {
+    //   @media screen and (min-width: 48.75rem) {
+    //     grid-column: 1/-1;
+    //     width: 100%;
+    //   }
+    // }
   }
   &__label {
-    flex: 0 0 100px;
-    font-size: basics.$font-size-f3;
-    color: colors.$color-white;
+    flex: 0 0 6rem;
   }
   &__input,
   &__text {
-    flex: 1 1 100%;
-    padding: 0.5rem;
-  }
-  .submit {
-    grid-column: 2/3;
-    justify-self: center;
-    text-decoration: none;
-    font-size: basics.$font-size-f3;
-    color: colors.$color-primary-font;
-    padding: 0.5rem 2.5rem;
-    background: linear-gradient(
-      170deg,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(255, 255, 255, 0.6) 20%,
-      rgba(255, 255, 255, 0.1) 50%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    @include shadow-box-1;
-    background-size: 150%;
-    background-position: right;
-    border: none;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
     outline: none;
-    cursor: pointer;
-    transition: 1s;
+    &__text {
+      flex: 1 1 100%;
+      padding: 0.5rem;
+      margin-bottom: 5rem;
+    }
   }
-  .primary:hover {
-    background-position: left;
-    color: colors.$color-white;
-    @include shadow-box-2;
+
+  &__submit {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    //justify-self: center;
+    @media screen and (min-width: 48.75rem) {
+      position: relative;
+      grid-row: -2/-1;
+    }
+    &--primary {
+      grid-column: 2/3;
+      font-size: basics.$font-size-f3;
+      color: colors.$color-primary-font;
+      padding: 0.5rem 2.5rem;
+      margin: 1rem 0;
+      background: linear-gradient(
+        170deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.6) 20%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      @include mixins.shadow-box-1;
+      background-size: 150%;
+      background-position: right;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 1s;
+    }
+    &--primary:hover {
+      background-position: left;
+      color: colors.$color-white;
+      @include mixins.shadow-box-2;
+    }
   }
 }
