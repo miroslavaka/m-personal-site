@@ -1,7 +1,7 @@
 ---
 layout: layouts/article.njk
 title: R1C1 formula
-date: 2022-05-22T14:00
+date: 2022-05-19T14:00
 perex: In this article I am writing about construction of r1c1 formula in excel format
 photo: excel-5.jpg
 alt: r1c1 formula
