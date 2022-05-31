@@ -94,7 +94,7 @@ title: Mira´s portfolio
   <div class="blog__content">
     <h2>My writing</h2>
     <div class="blog__articles">
-      {% for input in collections.writing | limit(3) %}
+      {% for input in collections.writing | limit(3) | reverse %}
       <div class="blog__article">
         <h3>{{input.data.title}}</h3>
         <p>{{input.data.perex}}</p>
