@@ -1,6 +1,6 @@
 ---
 layout: layouts/article.njk
-title: Automatic pivot table refresh
+title: Automatic refresh
 date: 2022-05-18T13:30
 perex: In this article I am writing about automatical pivot tables refresh in excel
 photo: excel-1.jpg
