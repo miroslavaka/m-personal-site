@@ -8,7 +8,6 @@
 .blog {
   &__content {
     padding: 2rem 1.6rem;
-
     h2 {
       margin: 0 0 1rem 0;
       font-size: 2rem;
@@ -25,6 +24,9 @@
     }
   }
   &__articles {
+    .btn1 a:hover {
+      color: colors.$color-primary-1;
+    }
     @media screen and (min-width: 30rem) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

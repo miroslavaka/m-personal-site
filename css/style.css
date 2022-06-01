@@ -348,9 +348,6 @@ body {
   }
 }
 
-.portfolio {
-  background-color: #eeeef0;
-}
 .portfolio__content {
   padding: 2rem 1.6rem;
 }
@@ -374,6 +371,9 @@ body {
   .portfolio__content {
     padding: 2rem 3.6rem;
   }
+}
+.portfolio__projects .btn2 a:hover {
+  color: #eac4d5;
 }
 @media screen and (min-width: 30rem) {
   .portfolio__projects {
@@ -470,6 +470,9 @@ body {
   .blog__content {
     padding: 2rem 3.6rem;
   }
+}
+.blog__articles .btn1 a:hover {
+  color: #bbe0d2;
 }
 @media screen and (min-width: 30rem) {
   .blog__articles {

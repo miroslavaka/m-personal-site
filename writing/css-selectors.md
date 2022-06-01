@@ -22,9 +22,9 @@ Let´s have an example to practice these selectors. Create new html file named i
     <body>
         <h1>Main Heading</h1>
          <h2>Heading1</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, felis at sollicitudin sodales, nunc mauris sagittis eros, finibus lacinia nunc nunc quis ligula.</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum.</p>
           <h2>Heading2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, felis at sollicitudin sodales, nunc mauris sagittis eros, finibus lacinia nunc nunc quis ligula.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum.</p>
     </body>
 </html>
 ```
@@ -102,9 +102,9 @@ Complete code used in this example is:
 <body>
     <h1 id="mainid" class="mainclass">Main Heading</h1>
     <h2>Heading1</h2>
-         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, felis at sollicitudin sodales, nunc mauris sagittis eros, finibus lacinia nunc nunc quis ligula.</p>
+         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, felis at sollicitudin</p>
     <h2>Heading2</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, felis at sollicitudin sodales, nunc mauris sagittis eros, finibus lacinia nunc nunc quis ligula.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum, felis at sollicitudin</p>
 </body>
 </html>
 ```

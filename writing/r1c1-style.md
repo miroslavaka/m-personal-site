@@ -7,7 +7,7 @@ photo: excel-5.jpg
 alt: r1c1 formula
 topics: vb
 timetoread: 5 minutes to read
-tags: writing
+tags: writing1
 ---
 
 Formulas in excel are very powerful and the style how excel write formulas is so called A1 style. But macro recorder uses formula R1C1 (R[1]C[1]) style.

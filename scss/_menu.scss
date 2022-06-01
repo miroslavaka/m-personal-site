@@ -1,6 +1,7 @@
 @use 'colors';
 @use 'basics';
 @use 'mixins';
+
 .menu {
   &__list {
     display: flex;

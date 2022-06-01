@@ -3,9 +3,6 @@
 @use 'mixins';
 
 .portfolio {
-  background-color: colors.$color-portfolio-bg;
-  // background-color: whitesmoke;
-
   &__content {
     padding: 2rem 1.6rem;
     h2 {
@@ -27,6 +24,9 @@
     }
   }
   &__projects {
+    .btn2 a:hover {
+      color: colors.$color-primary-2;
+    }
     @media screen and (min-width: 30rem) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -39,7 +39,6 @@
       gap: 2rem;
     }
   }
-  //toto zafungovalo na vsetky child, nie iba na posledne:
   &__projects:last-child {
     @media screen and (min-width: 30rem) {
       align-items: center;

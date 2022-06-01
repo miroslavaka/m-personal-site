@@ -7,7 +7,7 @@ photo: excel-1.jpg
 alt: pivot table
 topics: vb
 timetoread: 5 minutes to read
-tags: writing
+tags: writing1
 ---
 
 Firstly let me show on following picture which part of the pivot table is pivot item and pivot field.

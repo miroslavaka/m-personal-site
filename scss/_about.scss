@@ -32,7 +32,6 @@
     }
   }
 }
-
 .tools {
   &__content {
     padding: 2rem 1.6rem;
@@ -88,24 +87,10 @@
   @media screen and (min-width: 80rem) {
     padding: 1rem 20rem 5rem 20rem;
   }
-
   &__field {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
-
-    // &--email {
-    //   @media screen and (min-width: 48.75rem) {
-    //     grid-column: 1/-1;
-    //     width: 100%;
-    //   }
-    // }
-    // &--text {
-    //   @media screen and (min-width: 48.75rem) {
-    //     grid-column: 1/-1;
-    //     width: 100%;
-    //   }
-    // }
   }
   &__label {
     flex: 0 0 6rem;
@@ -121,12 +106,10 @@
       margin-bottom: 5rem;
     }
   }
-
   &__submit {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    //justify-self: center;
     @media screen and (min-width: 48.75rem) {
       position: relative;
       grid-row: -2/-1;
