@@ -62,9 +62,11 @@
     padding: 0 0.8rem 0.8rem 0.8rem;
     &--more a {
       text-decoration: none;
+      color: colors.$color-primary-font;
     }
     &--more i {
       font-size: small;
+      color: colors.$color-primary-font;
     }
     &--more a:hover i {
       transform: translateX(0.3rem);

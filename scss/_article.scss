@@ -14,4 +14,7 @@
       width: 22rem;
     }
   }
+  &__back a {
+    color: colors.$color-primary-font;
+  }
 }
