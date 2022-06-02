@@ -53,7 +53,7 @@
   padding: 0.4rem;
   margin: 1.1rem;
   color: colors.$color-white;
-  font-size: basics.$font-size-f1;
+  font-size: basics.$font-size-f4;
   border-radius: 50%;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -67,10 +67,14 @@
 .cont {
   background-color: colors.$color-primary-1;
   &__text {
-    margin: 0;
-    padding: 1rem;
+    margin: 0 5rem;
+    padding: 0.1rem;
     text-align: center;
     color: colors.$color-white;
+    font-size: basics.$font-size-f3;
+  }
+  &__text:first-child {
+    padding-top: 2rem;
   }
 }
 .form {
@@ -94,6 +98,7 @@
   }
   &__label {
     flex: 0 0 6rem;
+    color: colors.$color-white;
   }
   &__input,
   &__text {

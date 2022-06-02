@@ -24,6 +24,13 @@
     }
   }
   &__articles {
+    .btn1 {
+      margin-top: 1rem;
+      color: colors.$color-primary-font;
+      @media screen and (min-width: 48.75rem) {
+        grid-column: 3/4;
+      }
+    }
     .btn1 a:hover {
       color: colors.$color-primary-1;
     }
@@ -53,6 +60,18 @@
     border: 1px solid colors.$color-portfolio-bg;
     border-radius: basics.$border-radius-primary;
     padding: 0 0.8rem 0.8rem 0.8rem;
+    &--more a {
+      text-decoration: none;
+    }
+    &--more i {
+      font-size: small;
+    }
+    &--more a:hover i {
+      transform: translateX(0.3rem);
+      transition-property: transform;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-out;
+    }
   }
   &__more {
     font-size: basics.$font-size-f3;

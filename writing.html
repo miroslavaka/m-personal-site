@@ -34,7 +34,11 @@ title: Writing
       <div class="blog__article">
         <h3>{{input.data.title}}</h3>
         <p>{{input.data.perex}}</p>
-        <p><a href="{{input.url}}">Read post</a></p>
+        <p class="blog__article--more">
+          <a href="{{input.url}}"
+            >Read post <i class="fa fa-angle-right"></i
+          ></a>
+        </p>
       </div>
       {% endfor %}
     </div>

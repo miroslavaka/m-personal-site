@@ -150,7 +150,7 @@ body {
 }
 @media screen and (min-width: 42.5rem) {
   .intro__image {
-    width: 280px;
+    width: 17.5rem;
   }
 }
 
@@ -349,7 +349,7 @@ body {
 }
 
 .portfolio__content {
-  padding: 2rem 1.6rem;
+  padding: 2rem 1.6rem 0.7rem 1.6rem;
 }
 .portfolio__content h2 {
   font-size: 2rem;
@@ -364,12 +364,17 @@ body {
 }
 @media screen and (min-width: 48.75rem) {
   .portfolio__content {
-    padding: 2rem 2.6rem;
+    padding: 2rem 2.6rem 0.7rem 2.6rem;
   }
 }
 @media screen and (min-width: 61.25rem) {
   .portfolio__content {
-    padding: 2rem 3.6rem;
+    padding: 2rem 3.6rem 1rem 3.6rem;
+  }
+}
+@media screen and (min-width: 48.75rem) {
+  .portfolio__projects .btn2 {
+    grid-column: 3/4;
   }
 }
 .portfolio__projects .btn2 a:hover {
@@ -471,6 +476,15 @@ body {
     padding: 2rem 3.6rem;
   }
 }
+.blog__articles .btn1 {
+  margin-top: 1rem;
+  color: #313140;
+}
+@media screen and (min-width: 48.75rem) {
+  .blog__articles .btn1 {
+    grid-column: 3/4;
+  }
+}
 .blog__articles .btn1 a:hover {
   color: #bbe0d2;
 }
@@ -505,6 +519,18 @@ body {
   border: 1px solid #eeeef0;
   border-radius: 0.625rem;
   padding: 0 0.8rem 0.8rem 0.8rem;
+}
+.blog__article--more a {
+  text-decoration: none;
+}
+.blog__article--more i {
+  font-size: small;
+}
+.blog__article--more a:hover i {
+  transform: translateX(0.3rem);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 .blog__more {
   font-size: 0.9rem;
@@ -714,7 +740,7 @@ body {
   padding: 0.4rem;
   margin: 1.1rem;
   color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 1rem;
   border-radius: 50%;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
@@ -731,10 +757,14 @@ body {
   background-color: #bbe0d2;
 }
 .cont__text {
-  margin: 0;
-  padding: 1rem;
+  margin: 0 5rem;
+  padding: 0.1rem;
   text-align: center;
   color: #ffffff;
+  font-size: 0.9rem;
+}
+.cont__text:first-child {
+  padding-top: 2rem;
 }
 
 .form {
@@ -767,6 +797,7 @@ body {
 }
 .form__label {
   flex: 0 0 6rem;
+  color: #ffffff;
 }
 .form__input, .form__text {
   width: 100%;

@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: JS outputs
 date: 2022-05-20T14:30
-perex: In this article I am writing about basic js outputs
+perex: In this article I am writing about basic js outputs.
 photo: js-outputs.jpg
 alt: JS outputs
 topics: html, css, js

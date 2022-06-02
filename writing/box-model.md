@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: Box model
 date: 2022-06-01T19:30
-perex: I try visually explain difference between "box-sizing:content-box" and "box-sizing:border-box"
+perex: I try visually explain difference between "box-sizing:content-box" and "box-sizing:border-box".
 photo: box-model1.jpg
 alt: Box model
 topics: html, css

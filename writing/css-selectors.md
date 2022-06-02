@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: Css selectors
 date: 2022-05-22T15:30
-perex: In this article I am writing about basic css selectors
+perex: In this article I am writing about basic css selectors.
 photo: css-selectors.jpg
 alt: Types of css selectors
 topics: html, css

@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: Image slider
 date: 2022-05-21T15:00
-perex: In this article I am writing about step by step process of image slider creation
+perex: In this article I am writing about step by step process of image slider creation.
 photo: image-slider.jpg
 alt: Image of slider
 topics: html, css, js
