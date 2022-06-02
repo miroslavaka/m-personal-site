@@ -757,8 +757,8 @@ body {
   background-color: #bbe0d2;
 }
 .cont__text {
-  margin: 0 5rem;
-  padding: 0.1rem;
+  margin: 0;
+  padding: 3.5rem 2rem 1rem 2rem;
   text-align: center;
   color: #ffffff;
   font-size: 0.9rem;
