@@ -70,8 +70,7 @@
     margin: 0;
     padding: 3.5rem 2rem 1rem 2rem;
     text-align: center;
-    color: colors.$color-white;
-    font-size: basics.$font-size-f3;
+    font-size: basics.$font-size-f5;
   }
   &__text:first-child {
     padding-top: 2rem;
@@ -92,8 +91,6 @@
     padding: 1rem 20rem 5rem 20rem;
   }
   &__field {
-    display: flex;
-    justify-content: center;
     margin-bottom: 0.5rem;
   }
   &__label {
@@ -115,6 +112,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+
     @media screen and (min-width: 48.75rem) {
       position: relative;
       grid-row: -2/-1;
@@ -143,7 +141,7 @@
     }
     &--primary:hover {
       background-position: left;
-      color: colors.$color-white;
+      color: colors.$color-darkgrey;
       @include mixins.shadow-box-2;
     }
   }

@@ -23,7 +23,7 @@
     }
   }
   &__item:not(:last-child) {
-    border-right: 0.06rem solid colors.$color-menu-items;
+    border-right: 0.06rem solid colors.$color-darkgrey;
     @media screen and (min-width: 30rem) {
       border: none;
     }

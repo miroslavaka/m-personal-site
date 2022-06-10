@@ -2,16 +2,14 @@
 @use 'basics';
 @use 'mixins';
 
-.main-blog {
-  background-color: colors.$color-white;
-}
 .blog {
+  background-color: colors.$color-portfolio-bg;
   &__content {
     padding: 2rem 1.6rem;
     h2 {
       margin: 0 0 1rem 0;
       font-size: 2rem;
-      color: colors.$color-primary-2;
+      color: colors.$color-darkgrey;
       text-align: center;
       @include mixins.shadow-text-primary;
     }
@@ -32,7 +30,7 @@
       }
     }
     .btn1 a:hover {
-      color: colors.$color-primary-1;
+      color: colors.$color-darkgrey;
     }
     @media screen and (min-width: 30rem) {
       display: grid;
@@ -55,9 +53,8 @@
   &__article {
     width: 100%;
     font-size: basics.$font-size-f3;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.05);
-    border: 1px solid colors.$color-portfolio-bg;
+    background-color: colors.$color-white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: basics.$border-radius-primary;
     padding: 0 0.8rem 0.8rem 0.8rem;
     &--more a {

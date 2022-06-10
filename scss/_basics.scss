@@ -59,7 +59,7 @@ body {
   }
   &--primary a:hover {
     background-position: left;
-    color: colors.$color-white;
+    color: colors.$color-darkgrey;
     @include mixins.shadow-box-2;
   }
 }
@@ -83,32 +83,6 @@ body {
   }
 }
 
-//------------ANIMATIONS------------
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-//------blog.html----
-//------portfolio.html----
 .intro {
   &__content {
     font-size: $font-size-f3;
@@ -138,5 +112,28 @@ body {
     @media screen and (min-width: 42.5rem) {
       width: 17.5rem;
     }
+  }
+}
+//------------ANIMATIONS------------
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

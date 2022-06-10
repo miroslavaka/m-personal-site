@@ -39,7 +39,7 @@ body {
 }
 .button--primary a:hover {
   background-position: left;
-  color: #ffffff;
+  color: #c0c0c0;
   box-shadow: inset 0px 3px 5px rgb(255, 255, 255), 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -64,6 +64,48 @@ body {
 @media screen and (min-width: 48.75rem) {
   .back-to-top .fa {
     bottom: 2.5rem;
+  }
+}
+
+.intro__content {
+  font-size: 0.9rem;
+  margin: 2rem 1.6rem;
+  padding: 0 0.8rem 0.8rem 0.8rem;
+  border: 2px solid #313140;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 42.5rem) {
+  .intro__content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 48.75rem) {
+  .intro__content {
+    margin: 2rem 2.6rem;
+  }
+}
+@media screen and (min-width: 61.25rem) {
+  .intro__content {
+    margin: 2rem 3.6rem;
+  }
+}
+.intro__image {
+  width: 80%;
+}
+@media screen and (min-width: 30rem) {
+  .intro__image {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 36.25rem) {
+  .intro__image {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 42.5rem) {
+  .intro__image {
+    width: 17.5rem;
   }
 }
 
@@ -112,48 +154,6 @@ body {
     background-position: 0% 50%;
   }
 }
-.intro__content {
-  font-size: 0.9rem;
-  margin: 2rem 1.6rem;
-  padding: 0 0.8rem 0.8rem 0.8rem;
-  border: 2px solid #313140;
-  background-color: #ffffff;
-}
-@media screen and (min-width: 42.5rem) {
-  .intro__content {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-@media screen and (min-width: 48.75rem) {
-  .intro__content {
-    margin: 2rem 2.6rem;
-  }
-}
-@media screen and (min-width: 61.25rem) {
-  .intro__content {
-    margin: 2rem 3.6rem;
-  }
-}
-.intro__image {
-  width: 80%;
-}
-@media screen and (min-width: 30rem) {
-  .intro__image {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 36.25rem) {
-  .intro__image {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 42.5rem) {
-  .intro__image {
-    width: 17.5rem;
-  }
-}
-
 .header {
   background-image: linear-gradient(90deg, #eac4d5, #bbe0d2, #f3e5ab);
   background-size: 300% 300%;
@@ -289,7 +289,7 @@ body {
   left: 0;
   right: 0;
   margin: 0;
-  background-color: #eeeef0;
+  background-color: #f6f6f6;
   box-shadow: 0px 2px 4px 0px rgba(14, 30, 37, 0.12), 0px 2px 16px 0px rgba(14, 30, 37, 0.32);
   z-index: 1;
 }
@@ -378,7 +378,7 @@ body {
   }
 }
 .portfolio__projects .btn2 a:hover {
-  color: #eac4d5;
+  color: #c0c0c0;
 }
 @media screen and (min-width: 30rem) {
   .portfolio__projects {
@@ -452,17 +452,16 @@ body {
   padding: 0.2rem 0.5rem;
 }
 
-.main-blog {
-  background-color: #ffffff;
+.blog {
+  background-color: #f6f6f6;
 }
-
 .blog__content {
   padding: 2rem 1.6rem;
 }
 .blog__content h2 {
   margin: 0 0 1rem 0;
   font-size: 2rem;
-  color: #eac4d5;
+  color: #c0c0c0;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012), 0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.012);
 }
@@ -486,7 +485,7 @@ body {
   }
 }
 .blog__articles .btn1 a:hover {
-  color: #bbe0d2;
+  color: #c0c0c0;
 }
 @media screen and (min-width: 30rem) {
   .blog__articles {
@@ -514,9 +513,8 @@ body {
 .blog__article {
   width: 100%;
   font-size: 0.9rem;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid #eeeef0;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 0.625rem;
   padding: 0 0.8rem 0.8rem 0.8rem;
 }
@@ -545,11 +543,11 @@ body {
 }
 
 .contact {
-  background-color: #bbe0d2;
   padding-top: 2rem;
 }
 .contact h2 {
   color: #ffffff;
+  color: #bbe0d2;
   text-align: center;
   font-size: 2rem;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012), 0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.012);
@@ -561,7 +559,7 @@ body {
 }
 @media screen and (min-width: 48.75rem) {
   .contact__content {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 .contact__content p {
@@ -610,62 +608,43 @@ body {
     padding: 2rem 10rem;
   }
 }
-.contact__greeting {
+@media screen and (min-width: 67.5rem) {
+  .contact__left {
+    background-color: #f6f6f6;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012), 0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.012);
+    border-radius: 0.625rem;
+  }
+}
+.contact__handwritten {
+  font-family: "Kalam", cursive;
   text-align: center;
-  margin-bottom: 2rem;
-  color: #ffffff;
+  margin-bottom: 1.5rem;
 }
 .contact__text {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 .contact__social {
   text-align: center;
   padding: 2.5rem 1rem 2rem 1rem;
 }
 .contact__social i {
-  color: #ffffff;
+  color: #313140;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012), 0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.012);
   font-size: 2rem;
   padding-left: 1rem;
 }
 .contact__mail {
-  color: #ffffff;
+  color: #313140;
+}
+.contact__mail:hover {
+  color: #c0c0c0;
 }
 .contact__image {
-  width: 100%;
-  margin: 0 1rem;
-}
-@media screen and (min-width: 30rem) {
-  .contact__image {
-    margin: 0 2rem;
-    width: 90%;
-  }
-}
-@media screen and (min-width: 36.25rem) {
-  .contact__image {
-    margin: 0 3rem;
-    width: 75%;
-  }
-}
-@media screen and (min-width: 42.5rem) {
-  .contact__image {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 61.25rem) {
-  .contact__image {
-    width: 85%;
-  }
-}
-@media screen and (min-width: 67.5rem) {
-  .contact__image {
-    width: 75%;
-  }
-}
-@media screen and (min-width: 81.25rem) {
-  .contact__image {
-    width: 70%;
-  }
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__content {
@@ -675,6 +654,7 @@ body {
 }
 .footer__content:last-child {
   padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
 }
 @media screen and (min-width: 30rem) {
   .footer__content:last-child {
@@ -683,6 +663,11 @@ body {
 }
 .footer__text {
   margin: 0;
+}
+.footer__text a {
+  text-decoration: none;
+  color: #313140;
+  font-weight: 700;
 }
 .footer__year {
   margin: 0.2rem 0 0 0;
@@ -762,8 +747,7 @@ body {
   margin: 0;
   padding: 3.5rem 2rem 1rem 2rem;
   text-align: center;
-  color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 .cont__text:first-child {
   padding-top: 2rem;
@@ -793,8 +777,6 @@ body {
   }
 }
 .form__field {
-  display: flex;
-  justify-content: center;
   margin-bottom: 0.5rem;
 }
 .form__label {
@@ -839,7 +821,7 @@ body {
 }
 .form__submit--primary:hover {
   background-position: left;
-  color: #ffffff;
+  color: #c0c0c0;
   box-shadow: inset 0px 3px 5px rgb(255, 255, 255), 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
