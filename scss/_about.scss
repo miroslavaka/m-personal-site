@@ -3,6 +3,12 @@
 @use 'mixins';
 
 .about {
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5rem;
+    color: white;
+  }
   &__content {
     padding: 2rem 1.6rem 2rem 1.6rem;
     font-size: basics.$font-size-f3;
@@ -15,22 +21,23 @@
       gap: 2rem;
     }
   }
-  &__right,
-  &__left {
+  &__1,
+  &__2,
+  &__3 {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgb(31 38 135/12%);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: basics.$border-radius-primary;
-    h1 {
+    h2 {
       text-align: center;
     }
   }
-  &__left {
-    margin-bottom: 1rem;
-    @media screen and (min-width: 48.75rem) {
-      margin-bottom: 0;
-    }
-  }
+  // &__left {
+  //   margin-bottom: 1rem;
+  //   @media screen and (min-width: 48.75rem) {
+  //     margin-bottom: 0;
+  //   }
+  // }
 }
 .tools {
   &__content {
@@ -44,6 +51,10 @@
   &__text {
     font-size: basics.$font-size-f2;
     text-align: center;
+  }
+  &__btn {
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(100px, 1fr));
   }
 }
 .custom--btn {
