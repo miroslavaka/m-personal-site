@@ -132,7 +132,7 @@ body {
   }
 }
 .header {
-  background-image: linear-gradient(90deg, #ddd6f3, #bbe0d2, #fffcdc);
+  background-image: linear-gradient(90deg, #d4c4e6, #bbe0d2, #fbe7c6);
   background-size: 300% 300%;
   animation: gradient 10s ease infinite;
 }
@@ -339,12 +339,12 @@ body {
 }
 @media screen and (min-width: 48.75rem) {
   .portfolio__content {
-    padding: 2rem 2.6rem 0.7rem 2.6rem;
+    padding: 2rem 3rem 0.7rem 3rem;
   }
 }
 @media screen and (min-width: 61.25rem) {
   .portfolio__content {
-    padding: 2rem 3.8rem 1rem 3.8rem;
+    padding: 2rem 5rem 1rem 5rem;
   }
 }
 @media screen and (min-width: 48.75rem) {
@@ -655,19 +655,20 @@ body {
   color: white;
 }
 .about__content {
-  padding: 2rem 1.6rem 2rem 1.6rem;
+  padding: 2rem 1.8rem 2rem 1.8rem;
   font-size: 0.9rem;
 }
 @media screen and (min-width: 30rem) {
   .about__content {
-    padding: 3rem 2.4rem;
+    padding: 3rem 2.8rem;
   }
 }
 @media screen and (min-width: 48.75rem) {
   .about__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 3rem 5.5rem;
   }
 }
 .about__1, .about__2, .about__3 {
@@ -693,8 +694,7 @@ body {
   text-align: center;
 }
 .tools__btn {
-  display: grid;
-  grid-template-columns: auto-fit, minmax(100px, 1fr);
+  grid-template-columns: auto-fit, minmax(20px, 1fr);
 }
 
 .custom--btn {
@@ -710,11 +710,11 @@ body {
 }
 
 .custom--btn:nth-child(3n) {
-  background-color: #fffcdc;
+  background-color: #fbe7c6;
 }
 
 .custom--btn:nth-child(3n+1) {
-  background-color: #ddd6f3;
+  background-color: #dcbcd0;
 }
 
 .cont {
@@ -872,10 +872,10 @@ body {
   background-color: #bbe0d2;
 }
 .thanks__text2 {
-  color: #ddd6f3;
+  color: #dcbcd0;
 }
 .thanks__text3 {
-  color: #fffcdc;
+  color: #fbe7c6;
 }
 .thanks__text3::after {
   content: "";
@@ -883,7 +883,7 @@ body {
   margin: 2rem auto;
   width: 3rem;
   height: 0.1rem;
-  background-color: #fffcdc;
+  background-color: #fbe7c6;
 }
 
 .post {
