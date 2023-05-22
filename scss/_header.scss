@@ -3,7 +3,7 @@
 @use 'colors';
 
 .header {
-  background-image: linear-gradient(90deg, #d4c4e6, #bbe0d2, #fbe7c6);
+  background-image: linear-gradient(90deg, #d6c4e6 #bbe0d2, #fbe7c6);
   background-size: 300% 300%;
   animation: gradient 10s ease infinite;
   &__content {
