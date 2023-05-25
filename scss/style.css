@@ -67,6 +67,12 @@ body {
   }
 }
 
+.back-to-top .fa::before {
+  content: "\f106";
+  display: inline-block;
+  margin-top: 0.6rem;
+}
+
 .intro__content {
   font-size: 0.9rem;
   margin: 2rem 1.6rem;
@@ -132,7 +138,7 @@ body {
   }
 }
 .header {
-  background-image: linear-gradient(90deg, #d6c4e6 #bbe0d2, #fbe7c6);
+  background-image: linear-gradient(90deg, #d6c4e6, #bbe0d2, #fbe7c6);
   background-size: 300% 300%;
   animation: gradient 10s ease infinite;
 }
@@ -334,7 +340,7 @@ body {
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.012), 0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.012);
 }
-.portfolio__content h5 {
+.portfolio__content h4 {
   text-align: center;
 }
 @media screen and (min-width: 48.75rem) {
@@ -404,7 +410,7 @@ body {
 }
 .portfolio__icons {
   text-align: center;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
 }
 .portfolio__icons img {
   width: 2rem;
@@ -424,7 +430,12 @@ body {
   color: #313140;
   display: inline-block;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.5rem;
+}
+@media screen and (min-width: 30rem) {
+  .portfolio__links a:last-child {
+    margin-left: 0.7rem;
+  }
 }
 
 .blog {
@@ -506,6 +517,9 @@ body {
   transition-property: transform;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
+}
+.blog__img {
+  width: 100%;
 }
 .blog__more {
   font-size: 0.9rem;

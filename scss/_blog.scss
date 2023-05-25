@@ -72,6 +72,9 @@
       transition-timing-function: ease-out;
     }
   }
+  &__img {
+    width: 100%;
+  }
   &__more {
     font-size: basics.$font-size-f3;
     text-decoration: none;

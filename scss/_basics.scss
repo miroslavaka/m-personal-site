@@ -82,7 +82,11 @@ body {
     bottom: 2.5rem;
   }
 }
-
+.back-to-top .fa::before {
+  content: '\f106';
+  display: inline-block;
+  margin-top: 0.6rem;
+}
 .intro {
   &__content {
     font-size: $font-size-f3;
