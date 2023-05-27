@@ -14,31 +14,38 @@
     font-size: basics.$font-size-f3;
     @media screen and (min-width: 30rem) {
       padding: 3rem 2.8rem;
-    }
-    @media screen and (min-width: 48.75rem) {
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @media screen and (min-width: 55rem) {
       grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      padding: 3rem 5.5rem;
+    }
+    @media screen and (min-width: 80rem) {
+      grid-template-columns: repeat(4, 1fr);
       gap: 3rem;
       padding: 3rem 5.5rem;
     }
   }
   &__1,
   &__2,
-  &__3 {
+  &__3,
+  &__4 {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgb(31 38 135/12%);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: basics.$border-radius-primary;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 80rem) {
+      margin-bottom: 0;
+    }
     h2 {
       text-align: center;
     }
   }
-  // &__left {
-  //   margin-bottom: 1rem;
-  //   @media screen and (min-width: 48.75rem) {
-  //     margin-bottom: 0;
-  //   }
-  // }
 }
 .tools {
   &__content {
@@ -54,7 +61,6 @@
     text-align: center;
   }
   &__btn {
-    //display: grid;
     grid-template-columns: (auto-fit, minmax(20px, 1fr));
   }
 }
