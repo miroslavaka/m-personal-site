@@ -637,7 +637,7 @@ body {
 }
 
 .footer__content {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-align: center;
   background-color: #bbe0d2;
 }
@@ -712,7 +712,7 @@ body {
 }
 
 .tools__content {
-  padding: 2rem 1.6rem;
+  padding: 2rem 1.7rem;
   text-align: center;
 }
 .tools__image {
@@ -720,7 +720,7 @@ body {
   margin: 0.2rem;
 }
 .tools__text {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-align: center;
 }
 .tools__btn {
@@ -732,7 +732,7 @@ body {
   height: 3.75rem;
   display: inline-block;
   padding: 0.4rem;
-  margin: 1.1rem;
+  margin: 1.3rem;
   color: #ffffff;
   font-size: 1rem;
   border-radius: 50%;
