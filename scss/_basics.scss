@@ -87,12 +87,15 @@ body {
   display: inline-block;
   margin-top: 0.6rem;
 }
+.back-to-top .fa:active {
+  color: colors.$color-white;
+}
 .intro {
   &__content {
     font-size: $font-size-f3;
     margin: 2rem 1.6rem;
     padding: 0 0.8rem 0.8rem 0.8rem;
-    border: 2px solid colors.$color-primary-font;
+    border: 2px solid colors.$color-primary-1;
     background-color: colors.$color-white;
     @media screen and (min-width: 42.5rem) {
       display: flex;

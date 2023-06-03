@@ -73,11 +73,15 @@ body {
   margin-top: 0.6rem;
 }
 
+.back-to-top .fa:active {
+  color: #ffffff;
+}
+
 .intro__content {
   font-size: 0.9rem;
   margin: 2rem 1.6rem;
   padding: 0 0.8rem 0.8rem 0.8rem;
-  border: 2px solid #313140;
+  border: 2px solid #bbe0d2;
   background-color: #ffffff;
 }
 @media screen and (min-width: 42.5rem) {
@@ -667,6 +671,7 @@ body {
   margin-top: 0;
   padding-top: 5rem;
   color: white;
+  font-size: xx-large;
 }
 .about__content {
   padding: 2rem 1.8rem 2rem 1.8rem;
@@ -748,7 +753,7 @@ body {
 }
 
 .cont {
-  background-color: #bbe0d2;
+  background-color: #cbe6dc;
 }
 .cont__text {
   margin: 0;

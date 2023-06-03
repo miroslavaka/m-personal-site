@@ -8,6 +8,7 @@
     margin-top: 0;
     padding-top: 5rem;
     color: white;
+    font-size: xx-large;
   }
   &__content {
     padding: 2rem 1.8rem 2rem 1.8rem;
@@ -83,7 +84,7 @@
   background-color: colors.$color-primary-2;
 }
 .cont {
-  background-color: colors.$color-primary-1;
+  background-color: colors.$color-about-bg;
   &__text {
     margin: 0;
     padding: 3.5rem 2rem 1rem 2rem;
