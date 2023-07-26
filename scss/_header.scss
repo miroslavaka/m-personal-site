@@ -3,9 +3,10 @@
 @use 'colors';
 
 .header {
-  background-image: linear-gradient(90deg, #d6c4e6, #bbe0d2, #fbe7c6);
+  background-image: linear-gradient(90deg, #bbe0d2, #ffefd6);
   background-size: 300% 300%;
   animation: gradient 10s ease infinite;
+  line-height: 1.5;
   &__content {
     padding: 0 1.6rem;
     @media screen and (min-width: 30rem) {
