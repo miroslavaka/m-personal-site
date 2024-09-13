@@ -66,23 +66,24 @@
   }
 }
 .custom--btn {
-  width: 3.75rem;
+  width: 6.75rem;
   height: 3.75rem;
   display: inline-block;
   padding: 0.4rem;
   margin: 1.3rem;
+  background-color: colors.$color-primary-1;
   color: colors.$color-white;
-  font-size: basics.$font-size-f4;
-  border-radius: 50%;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  font-size: basics.$font-size-f6;
+  border-radius: 10%;
+  box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.05), 4px 4px 5px 0px rgba(0, 0, 0, 0.05);
 }
-.custom--btn:nth-child(3n) {
-  background-color: colors.$color-primary-3;
-}
-.custom--btn:nth-child(3n + 1) {
-  background-color: colors.$color-primary-2;
-}
+// .custom--btn:nth-child(3n) {
+//   background-color: colors.$color-primary-3;
+// }
+// .custom--btn:nth-child(3n + 1) {
+//   background-color: colors.$color-primary-2;
+// }
 .cont {
   background-color: colors.$color-about-bg;
   &__text {

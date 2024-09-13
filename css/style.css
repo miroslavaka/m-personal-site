@@ -734,23 +734,16 @@ body {
 }
 
 .custom--btn {
-  width: 3.75rem;
+  width: 6.75rem;
   height: 3.75rem;
   display: inline-block;
   padding: 0.4rem;
   margin: 1.3rem;
+  background-color: #bbe0d2;
   color: #ffffff;
-  font-size: 1rem;
-  border-radius: 50%;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-}
-
-.custom--btn:nth-child(3n) {
-  background-color: #fbe7c6;
-}
-
-.custom--btn:nth-child(3n+1) {
-  background-color: #dcbcd0;
+  font-size: 1.5rem;
+  border-radius: 10%;
+  box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.05), 4px 4px 5px 0px rgba(0, 0, 0, 0.05);
 }
 
 .cont {
