@@ -61,6 +61,9 @@
       margin: 0.4rem 0;
     }
   }
+  &__project:last-child {
+    align-self: center;
+  }
   &__image {
     width: 100%;
     border-radius: basics.$border-radius-primary;
@@ -88,11 +91,13 @@
   &__links {
     text-align: center;
     margin-bottom: 0.5rem;
+
     a {
       font-size: basics.$font-size-f3;
       text-decoration: none;
       color: colors.$color-primary-font;
       display: inline-block;
+      width: 40%;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
       padding: 0.4rem 0.5rem;
     }
