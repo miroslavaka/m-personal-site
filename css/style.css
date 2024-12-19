@@ -682,7 +682,7 @@ body {
   text-align: center;
   margin-top: 0;
   padding-top: 5rem;
-  color: white;
+  color: #ffffff;
   font-size: xx-large;
 }
 .about__content {
@@ -742,6 +742,9 @@ body {
 }
 .tools__btn {
   grid-template-columns: auto-fit, minmax(20px, 1fr);
+}
+.tools__edu .item--edu p {
+  color: #c0c0c0;
 }
 
 .custom--btn {
